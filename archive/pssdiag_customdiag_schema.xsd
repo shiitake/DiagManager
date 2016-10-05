@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema id="CustomTasks" targetNamespace="http://tempuri.org/CustomDiag.xsd" xmlns:mstns="http://tempuri.org/CustomDiag.xsd" xmlns="http://tempuri.org/CustomDiag.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="CustomTasks" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="CustomTask">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Param" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="name" form="unqualified" type="xs:string" />
+                  <xs:attribute name="prompt" form="unqualified" type="xs:string" />
+                  <xs:attribute name="datatype" form="unqualified" type="xs:string" />
+                  <xs:attribute name="default" form="unqualified" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="enabled" form="unqualified" type="xs:boolean" />
+            <xs:attribute name="groupname" form="unqualified" type="xs:string" />
+            <xs:attribute name="taskname" form="unqualified" type="xs:string" />
+            <xs:attribute name="type" form="unqualified" type="xs:string" />
+            <xs:attribute name="point" form="unqualified" type="xs:string" />
+            <xs:attribute name="wait" form="unqualified" type="xs:string" />
+            <xs:attribute name="cmd" form="unqualified" type="xs:string" />
+            <xs:attribute name="pollinginterval" form="unqualified" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

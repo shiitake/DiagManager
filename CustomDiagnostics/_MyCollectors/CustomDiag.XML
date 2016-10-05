@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="_MyCollectors" taskname="example1" type="Utility" point="Startup" wait="Yes" cmd="echo Your command goes here &gt; &quot;%output_path%\MyUtilityOutput.TXT&quot;" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="_MyCollectors" taskname="example2" type="TSQL_Script" point="Startup" wait="No" cmd="my_sql_script.sql" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="_MyCollectors" taskname="example3" type="TSQL_Command" point="Startup" wait="OnlyOnShutdown" cmd="select * from sysprocesses" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="_MyCollectors" taskname="example4" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="cscript sample.vbs %server_instance% %authmode% %ssuser% %sspwd% &gt; &quot;%output_name%.log&quot; 2&gt;&amp;1" pollinginterval="0" />
+</CustomTasks>

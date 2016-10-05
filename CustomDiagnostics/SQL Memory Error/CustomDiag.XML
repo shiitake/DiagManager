@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="SQL Memory Error" taskname="Define SQL Mem Snapshot Interval" type="Utility" point="Startup" wait="Yes" cmd=";%MEM_SNAPSHOT_INTERVAL%=15" />
+  <CustomTask enabled="true" groupname="SQL Memory Error" taskname="SQLVMSTAT" type="Utility" point="Startup" wait="No" cmd="SQLVMSTAT_LOOP.cmd %MEM_SNAPSHOT_INTERVAL% %instance% &gt; &quot;%output_name%.TXT&quot; 2&gt; &quot;%internal_output_name%.TXT&quot;" />
+  <CustomTask enabled="true" groupname="SQL Memory Error" taskname="DBCC MEMORYSTATUS" type="TSQL_Script" point="Startup" wait="No" cmd="DBCC_MEMORYSTATUS.tem" />
+  <CustomTask enabled="true" groupname="SQL Memory Error" taskname="ChkMem" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="chkmem.exe &gt; &quot;%output_name%.TXT&quot; 2&gt; &quot;%internal_output_name%.TXT&quot;" />
+  <CustomTask enabled="true" groupname="SQL Memory Error" taskname="SQL Module List" type="Utility" point="Shutdown" wait="OnlyOnShutdown" cmd="sql_module_list.cmd &gt; &quot;%output_name%.TXT&quot; 2&gt; &quot;%internal_output_name%.TXT&quot;" />
+  <CustomTask enabled="true" groupname="SQL Memory Error" taskname="SQL 2005 Memory Stats" type="TSQL_Script" point="Startup" wait="No" cmd="SQL_2005_Mem_Stats.sql" />
+</CustomTasks>

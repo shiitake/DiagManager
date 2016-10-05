@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="SQL 2008 Perf Stats" taskname="SQL 2008 Perf Stats Script" type="TSQL_Script" point="Startup" wait="No" cmd="SQL_2008_Perf_Stats.sql" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL 2008 Perf Stats" taskname="RDTSCTest" type="Utility" point="Startup" wait="No" cmd="RDTSCTestLoop.cmd &gt; &quot;%output_name%.OUT&quot; 2&gt;&amp;1" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL 2008 Perf Stats" taskname="SQL 2008 Perf Stats Snapshot" type="TSQL_Script" point="Startup" wait="OnlyOnShutdown" cmd="SQL_2008_Perf_Stats_Snapshot.sql" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL 2008 Perf Stats" taskname="SQL 2008 Perf Stats Snapshot" type="TSQL_Script" point="Shutdown" wait="OnlyOnShutdown" cmd="SQL_2008_Perf_Stats_Snapshot.sql" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL 2008 Perf Stats" taskname="XEvent SystemHealth" type="Utility" point="Shutdown" wait="Yes" cmd="sqlcmd.exe -S%server_instance% -iSQL_2008_XEvent_SystemHealth.sql -E -o&quot;%output_name%.xml&quot;  -y 0  &gt; %internal_output_name%.out 2&gt;&amp;1" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL 2008 Perf Stats" taskname="Top CPU Query Show Plan XML" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="TopCPUQueryShowPlanXML.bat 5 %output_name% %server_instance%" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL 2008 Perf Stats" taskname="Top CPU Query Show Plan XML" type="Utility" point="Shutdown" wait="Yes" cmd="TopCPUQueryShowPlanXML.bat 5 %output_name% %server_instance%" pollinginterval="0" />
+</CustomTasks>

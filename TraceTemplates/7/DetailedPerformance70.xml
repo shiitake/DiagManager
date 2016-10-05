@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dsProfiler xmlns="http://tempuri.org/pssdiag_trace_schema.xsd">
+	<ProfilerCollector template="DetailedPerformance70.xml">
+		<Events>
+			<EventType name="Cursors">
+				<Event id="78" name="CursorClose" enabled="false" description="A cursor previously opened on a Transact-SQL statement by ODBC, OLE DB, or DB-Library is closed." />
+				<Event id="74" name="CursorExecute" enabled="false" description="A cursor previously prepared on a Transact-SQL statement by ODBC, OLE DB, or DB-Library is executed." />
+				<Event id="76" name="CursorImplicitConversion" enabled="true" description="A cursor on a Transact-SQL statement is converted by SQL Server from one type to another. Triggered for ANSI and non-ANSI cursors." />
+				<Event id="53" name="CursorOpen" enabled="true" description="Indicates when a cursor is opened on a Transact-SQL statement by ODBC, OLE DB, or DB-Library." />
+				<Event id="70" name="CursorPrepare" enabled="false" description="Indicates when a cursor on a Transact-SQL statement is prepared for use by ODBC, OLE DB, or DB-Library." />
+				<Event id="77" name="CursorUnprepare" enabled="false" description="A prepared cursor on a Transact-SQL statement is unprepared (deleted) by ODBC, OLE DB, or DB-Library." />
+				<Event id="75" name="CursorRecompile" enabled="true" description="A cursor opened on a Transact-SQL statement by ODBC or DB-Library has been recompiled either directly or due to a schema change. Triggered for ANSI and non-ANSI cursors." />
+			</EventType>
+			<EventType name="Errors and Warnings">
+				<Event id="16" name="Attention" enabled="true" description="Occurs when attention events, such as client-interrupt requests or broken client connections, happen." />
+				<Event id="22" name="ErrorLog" enabled="false" description="Indicates that error events have been logged in the SQL Server error log." />
+				<Event id="21" name="EventLog" enabled="true" description="Indicates that events have been logged in the Microsoft Windows NT application log." />
+				<Event id="33" name="Exception" enabled="true" description="Indicates that an exception has occurred in SQL Server. " />
+				<Event id="67" name="Execution Warnings" enabled="true" description="Indicates any warnings that occurred during the execution of a SQL Server statement or stored procedure." />
+				<Event id="55" name="Hash Warning" enabled="true" description="Indicates that a hashing operation (for example, hash join, hash aggregate, hash union, and hash distinct) that is not processing on a buffer partition has reverted to an alternate plan. This can occur because of recursion depth, data skew, trace flags, or bit counting." />
+				<Event id="79" name="Missing Column Statistics" enabled="false" description="Column statistics that could have been useful for the optimizer are not available." />
+				<Event id="80" name="Missing Join Predicate" enabled="true" description="Query that has no join predicate is being executed. This could result in a long-running query." />
+				<Event id="61" name="OLE DB Errors" enabled="true" description="Indicates that an OLE DB error has occurred." />
+				<Event id="69" name="Sort Warnings" enabled="true" description="Indicates sort operations that do not fit into memory. Does not include sort operations involving the creating of indexes; only sort operations within a query (such as an ORDER BY clause used in a SELECT statement)." />
+			</EventType>
+			<EventType name="Locks">
+				<Event id="24" name="Lock:Acquired" enabled="false" description="Indicates acquisition of a lock on a resource, such as a data page." />
+				<Event id="26" name="Lock:Cancel" enabled="false" description="Indicates that the acquisition of a lock on a resource has been canceled (for example, due to a deadlock)." />
+				<Event id="25" name="Lock:Deadlock" enabled="true" description="Indicates that two concurrent transactions have deadlocked each other by trying to obtain incompatible locks on resources the other transaction owns. " />
+				<Event id="59" name="Lock:Deadlock Chain" enabled="true" description="Produced for each of the events leading up to the deadlock." />
+				<Event id="60" name="Lock:Escalation" enabled="true" description="Indicates that a finer-grained lock has been converted to a coarser-grained lock (for example, a row lock escalated or converted to a page lock)." />
+				<Event id="23" name="Lock:Released" enabled="false" description="Indicates that a lock on a resource, such as a page, has been released." />
+				<Event id="27" name="Lock:Timeout" enabled="true" description="Indicates that a request for a lock on a resource, such as a page, has timed out due to another transaction holding a blocking lock on the required resource. Time-out is determined by the @@LOCK_TIMEOUT function, and can be set with the SET LOCK_TIMEOUT statement. " />
+			</EventType>
+			<EventType name="Objects">
+				<Event id="58" name="Auto Update Stats" enabled="true" description="Indicates an automatic updating of index statistics has occurred." />
+				<Event id="49" name="Object:Closed" enabled="false" description="Indicates that an object has been closed." />
+				<Event id="46" name="Object:Created" enabled="false" description="Indicates that an object has been created, such as for CREATE INDEX, CREATE TABLE, and CREATE DATABASE statements." />
+				<Event id="47" name="Object:Deleted" enabled="false" description="Indicates that an object has been deleted, such as in DROP INDEX and DROP TABLE statements." />
+				<Event id="48" name="Object:Opened" enabled="false" description="Indicates that an object has been opened." />
+			</EventType>
+			<EventType name="Performance" enabled="true">
+				<Event id="30" name="Degree of Parallelism (7.0 Delete)" enabled="true" description="Occurs before a DELETE statement is executed. " />
+				<Event id="28" name="Degree of Parallelism (7.0 Insert)" enabled="true" description="Occurs before an INSERT statement is executed. " />
+				<Event id="31" name="Degree of Parallelism (7.0 Select)" enabled="true" description="Occurs before a SELECT statement is executed. " />
+				<Event id="29" name="Degree of Parallelism (7.0 Update)" enabled="true" description="Occurs before an UPDATE statement is executed. " />
+				<Event id="68" name="Execution Plan" enabled="true" description="Displays the plan tree of the Transact-SQL statement executed." />
+			</EventType>
+			<EventType name="Scans" enabled="false">
+				<Event id="51" name="Scan:Started" enabled="false" description="Indicates when a table or index scan has started." />
+				<Event id="52" name="Scan:Stopped" enabled="false" description="Indicates when a table or index scan has stopped." />
+			</EventType>
+			<EventType name="Security Audit" enabled="true">
+				<Event id="14" name="Login" enabled="true" description="Occurs when a user successfully logs in to SQL Server." />
+				<Event id="20" name="Login Failed" enabled="true" description="Indicates that a login attempt to SQL Server from a client failed." />
+				<Event id="15" name="Logout" enabled="true" description="Occurs when a user logs out of SQL Server." />
+				<Event id="18" name="ServiceControl" enabled="true" description="Occurs when the SQL Server service state is modified." />
+			</EventType>
+			<EventType name="Server" enabled="true">
+				<Event id="81" name="Server Memory Change" enabled="true" description="Microsoft SQL Server memory usage has increased or decreased by either 1 megabyte (MB) or 5 percent of the maximum server memory, whichever is greater." />
+			</EventType>
+			<EventType name="Sessions" enabled="true">
+				<Event id="17" name="ExistingConnection" enabled="true" description="Detects all activity by users connected to SQL Server before the trace started." />
+			</EventType>
+			<EventType name="Stored Procedures">
+				<Event id="10" name="RPC:Completed" enabled="true" description="Occurs when a remote procedure call (RPC) has completed." />
+				<Event id="11" name="RPC:Starting" enabled="true" description="Occurs when an RPC has started." />
+				<Event id="38" name="SP:CacheHit" enabled="false" description="Indicates when a stored procedure is found in the procedure cache." />
+				<Event id="35" name="SP:CacheInsert" enabled="true" description="Indicates when an item is inserted into the procedure cache." />
+				<Event id="34" name="SP:CacheMiss" enabled="false" description="Indicates when a stored procedure is not found in the procedure cache." />
+				<Event id="36" name="SP:CacheRemove" enabled="true" description="Indicates when an item is removed from the procedure cache." />
+				<Event id="43" name="SP:Completed" enabled="true" description="Indicates when the stored procedure has completed." />
+				<Event id="39" name="SP:ExecContextHit" enabled="false" description="Indicates when the execution version of a stored procedure has been found in the procedure cache." />
+				<Event id="37" name="SP:Recompile" enabled="true" description="Indicates that a stored procedure was recompiled." />
+				<Event id="42" name="SP:Starting" enabled="true" description="Indicates when the stored procedure has started." />
+				<Event id="45" name="SP:StmtCompleted" enabled="true" description="Occurs when the stored procedure statement has completed." />
+				<Event id="44" name="SP:StmtStarting" enabled="true" description="Occurs when the stored procedure statement has started." />
+			</EventType>
+			<EventType name="Transactions">
+				<Event id="19" name="DTCTransaction" enabled="true" description="Tracks Microsoft Distributed Transaction Coordinator (MS DTC) coordinated transactions between two or more databases." />
+				<Event id="50" name="SQL Transaction" enabled="true" description="Tracks Transact-SQL BEGIN, COMMIT, SAVE, and ROLLBACK TRANSACTION statements." />
+				<Event id="54" name="Transaction Log" enabled="false" description="Tracks when transactions are written to the transaction log." />
+			</EventType>
+			<EventType name="TSQL">
+				<Event id="72" name="Exec Prepared SQL" enabled="false" description="ODBC, OLE DB, or DB-Library has executed a prepared Transact-SQL statement or statements." />
+				<Event id="71" name="Prepare SQL" enabled="false" description="ODBC, OLE DB, or DB-Library has prepared a Transact-SQL statement or statements for use." />
+				<Event id="12" name="SQL:BatchCompleted" enabled="true" description="Occurs when a Transact-SQL batch has completed." />
+				<Event id="13" name="SQL:BatchStarting" enabled="true" description="Occurs when a Transact-SQL batch has started." />
+				<Event id="41" name="SQL:StmtCompleted" enabled="true" description="Occurs when the Transact-SQL statement has completed." />
+				<Event id="40" name="SQL:StmtStarting" enabled="true" description="Occurs when the Transact-SQL statement has started." />
+				<Event id="73" name="Unprepare SQL" enabled="false" description="ODBC, OLE DB, or DB-Library has unprepared (deleted) a prepared Transact-SQL statement or statements." />
+			</EventType>
+			<EventType name="User Configurable" enabled="false">
+				<Event id="82" name="User Configurable 0" enabled="false" description="Event data defined by the user." />
+				<Event id="83" name="User Configurable 1" enabled="false" description="Event data defined by the user." />
+				<Event id="84" name="User Configurable 2" enabled="false" description="Event data defined by the user." />
+				<Event id="85" name="User Configurable 3" enabled="false" description="Event data defined by the user." />
+				<Event id="86" name="User Configurable 4" enabled="false" description="Event data defined by the user." />
+				<Event id="87" name="User Configurable 5" enabled="false" description="Event data defined by the user." />
+				<Event id="88" name="User Configurable 6" enabled="false" description="Event data defined by the user." />
+				<Event id="89" name="User Configurable 7" enabled="false" description="Event data defined by the user." />
+				<Event id="90" name="User Configurable 8" enabled="false" description="Event data defined by the user." />
+				<Event id="91" name="User Configurable 9" enabled="false" description="Event data defined by the user." />
+			</EventType>
+		</Events>
+    </ProfilerCollector>
+</dsProfiler>

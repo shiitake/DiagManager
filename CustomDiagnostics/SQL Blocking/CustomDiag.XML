@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="SQL Blocking" taskname="Enable Blocking Trace Flags" type="TSQL_Command" point="Startup" wait="OnlyOnShutdown" cmd="EXEC dbo.sp_diag_trace_flag_enable 1204, '%appname%'  EXEC dbo.sp_diag_trace_flag_enable 1222, '%appname%'  EXEC dbo.sp_diag_trace_flag_enable 3605, '%appname%'  EXEC dbo.sp_diag_trace_flag_disable 3604, '%appname%'  " />
+  <CustomTask enabled="true" groupname="SQL Blocking" taskname="sysobjects sysindexes" type="TSQL_Script" point="Startup" wait="OnlyOnShutdown" cmd="sysobjects_sysindexes.sql" />
+</CustomTasks>

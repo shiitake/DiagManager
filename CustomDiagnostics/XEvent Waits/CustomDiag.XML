@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="XEVent Waits" taskname="Start Xevent" type="TSQL_Script" point="Startup" wait="No" cmd="XEventStart.sql" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="XEvent Waits" taskname="LATCH_SH waits" type="Utility" point="Shutdown" wait="Yes" cmd="sqlcmd.exe -S%server_instance% -iLATCH_SH_WAITS.sql -E -o&quot;%output_name%.xml&quot;  -y 0  &gt; %internal_output_name%.out 2&gt;&amp;1" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="XEvent Waits" taskname="LATCH_EX waits" type="Utility" point="Shutdown" wait="Yes" cmd="sqlcmd.exe -S%server_instance% -iLATCH_EX_WAITS.sql -E -o&quot;%output_name%.xml&quot;  -y 0  &gt; %internal_output_name%.out 2&gt;&amp;1" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="XEvent Waits" taskname="LATCH_UP waits" type="Utility" point="Shutdown" wait="Yes" cmd="sqlcmd.exe -S%server_instance% -iLATCH_UP_WAITS.sql -E -o&quot;%output_name%.xml&quot;  -y 0  &gt; %internal_output_name%.out 2&gt;&amp;1" pollinginterval="0" />
+  
+</CustomTasks>

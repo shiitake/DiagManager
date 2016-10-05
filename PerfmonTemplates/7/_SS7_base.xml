@@ -1,0 +1,2575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dsPerfmon xmlns="http://tempuri.org/pssdiag_perfmon_schema.xsd">
+    <PerfmonCollector>
+        <PerfmonCounters>
+			<PerfmonObject enabled="true" name="\SQLServer:Buffer Manager">
+				<PerfmonCounter enabled="true" name="\Buffer Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Buffer Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Page Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\ExtendedMem Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\ExtendedMem Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\ExtendedMem Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\ExtendedMem Cache Migrations/sec"/>
+				<PerfmonCounter enabled="true" name="\Free Buffers"/>
+				<PerfmonCounter enabled="true" name="\Committed Pages"/>
+				<PerfmonCounter enabled="true" name="\Reserved Page Count"/>
+				<PerfmonCounter enabled="true" name="\Stolen Page Count"/>
+				<PerfmonCounter enabled="true" name="\Lazy Writes/sec"/>
+				<PerfmonCounter enabled="true" name="\Readahead Pages/sec"/>
+				<PerfmonCounter enabled="true" name="\Cache Size (pages)"/>
+				<PerfmonCounter enabled="true" name="\Page Reads/sec"/>
+				<PerfmonCounter enabled="true" name="\Page Writes/sec"/>
+				<PerfmonCounter enabled="true" name="\Checkpoint Writes/sec"/>
+				<PerfmonCounter enabled="true" name="\Lazy Writer Buffers/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:General Statistics">
+				<PerfmonCounter enabled="true" name="\Logins/sec"/>
+				<PerfmonCounter enabled="true" name="\Logouts/sec"/>
+				<PerfmonCounter enabled="true" name="\User Connections"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Locks(Extent)">
+				<PerfmonCounter enabled="true" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Timeouts/sec"/>
+				<PerfmonCounter enabled="true" name="\Number of Deadlocks/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time Base"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Locks(Key)">
+				<PerfmonCounter enabled="true" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Timeouts/sec"/>
+				<PerfmonCounter enabled="true" name="\Number of Deadlocks/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time Base"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Locks(Page)">
+				<PerfmonCounter enabled="true" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Timeouts/sec"/>
+				<PerfmonCounter enabled="true" name="\Number of Deadlocks/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time Base"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Locks(Table)">
+				<PerfmonCounter enabled="true" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Timeouts/sec"/>
+				<PerfmonCounter enabled="true" name="\Number of Deadlocks/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time Base"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Locks(RID)">
+				<PerfmonCounter enabled="true" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Timeouts/sec"/>
+				<PerfmonCounter enabled="true" name="\Number of Deadlocks/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time Base"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Locks(Database)">
+				<PerfmonCounter enabled="true" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Timeouts/sec"/>
+				<PerfmonCounter enabled="true" name="\Number of Deadlocks/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Lock Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Wait Time Base"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SQLServer:Databases(pubs)">
+				<PerfmonCounter enabled="false" name="\Data File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Log File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Percent Log Used"/>
+				<PerfmonCounter enabled="false" name="\Active Transactions"/>
+				<PerfmonCounter enabled="false" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Repl. Pending Xacts"/>
+				<PerfmonCounter enabled="false" name="\Repl. Trans. Rate"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Rows/sec"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\Backup/Restore Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\DBCC Logical Scan Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Shrink Data Movement Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Bytes Per Flush"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Waits/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Wait Time"/>
+				<PerfmonCounter enabled="false" name="\Log Truncations"/>
+				<PerfmonCounter enabled="false" name="\Log Growths"/>
+				<PerfmonCounter enabled="false" name="\Log Shrinks"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Databases(*)">
+				<PerfmonCounter enabled="true" name="\Data File(s) Size (KB)"/>
+				<PerfmonCounter enabled="true" name="\Log File(s) Size (KB)"/>
+				<PerfmonCounter enabled="true" name="\Percent Log Used"/>
+				<PerfmonCounter enabled="true" name="\Active Transactions"/>
+				<PerfmonCounter enabled="true" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="true" name="\Repl. Pending Xacts"/>
+				<PerfmonCounter enabled="true" name="\Repl. Trans. Rate"/>
+				<PerfmonCounter enabled="true" name="\Log Cache Reads/sec"/>
+				<PerfmonCounter enabled="true" name="\Log Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Log Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Bulk Copy Rows/sec"/>
+				<PerfmonCounter enabled="true" name="\Bulk Copy Throughput/sec"/>
+				<PerfmonCounter enabled="true" name="\Backup/Restore Throughput/sec"/>
+				<PerfmonCounter enabled="true" name="\DBCC Logical Scan Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Shrink Data Movement Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Log Flushes/sec"/>
+				<PerfmonCounter enabled="true" name="\Log Bytes Per Flush"/>
+				<PerfmonCounter enabled="true" name="\Log Flush Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Log Flush Wait Time"/>
+				<PerfmonCounter enabled="true" name="\Log Truncations"/>
+				<PerfmonCounter enabled="true" name="\Log Growths"/>
+				<PerfmonCounter enabled="true" name="\Log Shrinks"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SQLServer:Databases(msdb)">
+				<PerfmonCounter enabled="false" name="\Data File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Log File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Percent Log Used"/>
+				<PerfmonCounter enabled="false" name="\Active Transactions"/>
+				<PerfmonCounter enabled="false" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Repl. Pending Xacts"/>
+				<PerfmonCounter enabled="false" name="\Repl. Trans. Rate"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Rows/sec"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\Backup/Restore Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\DBCC Logical Scan Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Shrink Data Movement Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Bytes Per Flush"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Waits/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Wait Time"/>
+				<PerfmonCounter enabled="false" name="\Log Truncations"/>
+				<PerfmonCounter enabled="false" name="\Log Growths"/>
+				<PerfmonCounter enabled="false" name="\Log Shrinks"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SQLServer:Databases(Northwind)">
+				<PerfmonCounter enabled="false" name="\Data File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Log File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Percent Log Used"/>
+				<PerfmonCounter enabled="false" name="\Active Transactions"/>
+				<PerfmonCounter enabled="false" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Repl. Pending Xacts"/>
+				<PerfmonCounter enabled="false" name="\Repl. Trans. Rate"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Rows/sec"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\Backup/Restore Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\DBCC Logical Scan Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Shrink Data Movement Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Bytes Per Flush"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Waits/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Wait Time"/>
+				<PerfmonCounter enabled="false" name="\Log Truncations"/>
+				<PerfmonCounter enabled="false" name="\Log Growths"/>
+				<PerfmonCounter enabled="false" name="\Log Shrinks"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SQLServer:Databases(tempdb)">
+				<PerfmonCounter enabled="false" name="\Data File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Log File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Percent Log Used"/>
+				<PerfmonCounter enabled="false" name="\Active Transactions"/>
+				<PerfmonCounter enabled="false" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Repl. Pending Xacts"/>
+				<PerfmonCounter enabled="false" name="\Repl. Trans. Rate"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Rows/sec"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\Backup/Restore Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\DBCC Logical Scan Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Shrink Data Movement Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Bytes Per Flush"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Waits/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Wait Time"/>
+				<PerfmonCounter enabled="false" name="\Log Truncations"/>
+				<PerfmonCounter enabled="false" name="\Log Growths"/>
+				<PerfmonCounter enabled="false" name="\Log Shrinks"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SQLServer:Databases(model)">
+				<PerfmonCounter enabled="false" name="\Data File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Log File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Percent Log Used"/>
+				<PerfmonCounter enabled="false" name="\Active Transactions"/>
+				<PerfmonCounter enabled="false" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Repl. Pending Xacts"/>
+				<PerfmonCounter enabled="false" name="\Repl. Trans. Rate"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Rows/sec"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\Backup/Restore Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\DBCC Logical Scan Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Shrink Data Movement Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Bytes Per Flush"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Waits/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Wait Time"/>
+				<PerfmonCounter enabled="false" name="\Log Truncations"/>
+				<PerfmonCounter enabled="false" name="\Log Growths"/>
+				<PerfmonCounter enabled="false" name="\Log Shrinks"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SQLServer:Databases(master)">
+				<PerfmonCounter enabled="false" name="\Data File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Log File(s) Size (KB)"/>
+				<PerfmonCounter enabled="false" name="\Percent Log Used"/>
+				<PerfmonCounter enabled="false" name="\Active Transactions"/>
+				<PerfmonCounter enabled="false" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Repl. Pending Xacts"/>
+				<PerfmonCounter enabled="false" name="\Repl. Trans. Rate"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Log Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Rows/sec"/>
+				<PerfmonCounter enabled="false" name="\Bulk Copy Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\Backup/Restore Throughput/sec"/>
+				<PerfmonCounter enabled="false" name="\DBCC Logical Scan Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Shrink Data Movement Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Bytes Per Flush"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Waits/sec"/>
+				<PerfmonCounter enabled="false" name="\Log Flush Wait Time"/>
+				<PerfmonCounter enabled="false" name="\Log Truncations"/>
+				<PerfmonCounter enabled="false" name="\Log Growths"/>
+				<PerfmonCounter enabled="false" name="\Log Shrinks"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Latches">
+				<PerfmonCounter enabled="true" name="\Latch Waits/sec"/>
+				<PerfmonCounter enabled="true" name="\Average Latch Wait Time (ms)"/>
+				<PerfmonCounter enabled="true" name="\Average Latch Wait Time Base"/>
+				<PerfmonCounter enabled="true" name="\Total Latch Wait Time (ms)"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Access Methods">
+				<PerfmonCounter enabled="true" name="\Full Scans/sec"/>
+				<PerfmonCounter enabled="true" name="\Range Scans/sec"/>
+				<PerfmonCounter enabled="true" name="\Probe Scans/sec"/>
+				<PerfmonCounter enabled="true" name="\Scan Point Revalidations/sec"/>
+				<PerfmonCounter enabled="true" name="\Workfiles Created/sec"/>
+				<PerfmonCounter enabled="true" name="\Worktables Created/sec"/>
+				<PerfmonCounter enabled="true" name="\Worktables From Cache Ratio"/>
+				<PerfmonCounter enabled="true" name="\Worktables From Cache Base"/>
+				<PerfmonCounter enabled="true" name="\Forwarded Records/sec"/>
+				<PerfmonCounter enabled="true" name="\Skipped Ghosted Records/sec"/>
+				<PerfmonCounter enabled="true" name="\Index Searches/sec"/>
+				<PerfmonCounter enabled="true" name="\FreeSpace Scans/sec"/>
+				<PerfmonCounter enabled="true" name="\FreeSpace Page Fetches/sec"/>
+				<PerfmonCounter enabled="true" name="\Pages Allocated/sec"/>
+				<PerfmonCounter enabled="true" name="\Extents Allocated/sec"/>
+				<PerfmonCounter enabled="true" name="\Mixed page allocations/sec"/>
+				<PerfmonCounter enabled="true" name="\Extent Deallocations/sec"/>
+				<PerfmonCounter enabled="true" name="\Page Deallocations/sec"/>
+				<PerfmonCounter enabled="true" name="\Page Splits/sec"/>
+				<PerfmonCounter enabled="true" name="\Table Lock Escalations/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:SQL Statistics">
+				<PerfmonCounter enabled="true" name="\Batch Requests/sec"/>
+				<PerfmonCounter enabled="true" name="\Auto-Param Attempts/sec"/>
+				<PerfmonCounter enabled="true" name="\Failed Auto-Params/sec"/>
+				<PerfmonCounter enabled="true" name="\Safe Auto-Params/sec"/>
+				<PerfmonCounter enabled="true" name="\Unsafe Auto-Params/sec"/>
+				<PerfmonCounter enabled="true" name="\SQL Compilations/sec"/>
+				<PerfmonCounter enabled="true" name="\SQL Re-Compilations/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Cache Manager(Misc. Normalized Trees)">
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Cache Pages"/>
+				<PerfmonCounter enabled="true" name="\Cache Object Counts"/>
+				<PerfmonCounter enabled="true" name="\Cache Use Counts/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Cache Manager(Trigger Plans)">
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Cache Pages"/>
+				<PerfmonCounter enabled="true" name="\Cache Object Counts"/>
+				<PerfmonCounter enabled="true" name="\Cache Use Counts/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Cache Manager(Replication Procedure Plans)">
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Cache Pages"/>
+				<PerfmonCounter enabled="true" name="\Cache Object Counts"/>
+				<PerfmonCounter enabled="true" name="\Cache Use Counts/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Cache Manager(Adhoc Sql Plans)">
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Cache Pages"/>
+				<PerfmonCounter enabled="true" name="\Cache Object Counts"/>
+				<PerfmonCounter enabled="true" name="\Cache Use Counts/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Cache Manager(Prepared Sql Plans)">
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Cache Pages"/>
+				<PerfmonCounter enabled="true" name="\Cache Object Counts"/>
+				<PerfmonCounter enabled="true" name="\Cache Use Counts/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Cache Manager(Procedure Plans)">
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio"/>
+				<PerfmonCounter enabled="true" name="\Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="true" name="\Cache Pages"/>
+				<PerfmonCounter enabled="true" name="\Cache Object Counts"/>
+				<PerfmonCounter enabled="true" name="\Cache Use Counts/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Memory Manager">
+				<PerfmonCounter enabled="true" name="\Connection Memory (KB)"/>
+				<PerfmonCounter enabled="true" name="\Granted Workspace Memory (KB)"/>
+				<PerfmonCounter enabled="true" name="\Lock Memory (KB)"/>
+				<PerfmonCounter enabled="true" name="\Lock Blocks Allocated"/>
+				<PerfmonCounter enabled="true" name="\Lock Owner Blocks Allocated"/>
+				<PerfmonCounter enabled="true" name="\Lock Blocks"/>
+				<PerfmonCounter enabled="true" name="\Lock Owner Blocks"/>
+				<PerfmonCounter enabled="true" name="\Maximum Workspace Memory (KB)"/>
+				<PerfmonCounter enabled="true" name="\Memory Grants Outstanding"/>
+				<PerfmonCounter enabled="true" name="\Memory Grants Pending"/>
+				<PerfmonCounter enabled="true" name="\Optimizer Memory (KB)"/>
+				<PerfmonCounter enabled="true" name="\SQL Cache Memory (KB)"/>
+				<PerfmonCounter enabled="true" name="\Target Server Memory(KB)"/>
+				<PerfmonCounter enabled="true" name="\Total Server Memory (KB)"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 10)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 9)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 8)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 7)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 6)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 5)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 4)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 3)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 2)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:User Settable(User counter 1)">
+				<PerfmonCounter enabled="true" name="\Query"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Replication Agents(*)">
+				<PerfmonCounter enabled="true" name="\Running"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Replication Merge(*)">
+				<PerfmonCounter enabled="true" name="\Uploaded Changes/sec"/>
+				<PerfmonCounter enabled="true" name="\Downloaded Changes/sec"/>
+				<PerfmonCounter enabled="true" name="\Conflicts/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Replication Logreader(*)">
+				<PerfmonCounter enabled="true" name="\Logreader:Delivery Latency"/>
+				<PerfmonCounter enabled="true" name="\Logreader:Delivered Cmds/sec"/>
+				<PerfmonCounter enabled="true" name="\Logreader:Delivered Trans/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Replication Dist.(*)">
+				<PerfmonCounter enabled="true" name="\Dist:Delivery Latency"/>
+				<PerfmonCounter enabled="true" name="\Dist:Delivered Cmds/sec"/>
+				<PerfmonCounter enabled="true" name="\Dist:Delivered Trans/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Replication Snapshot(*)">
+				<PerfmonCounter enabled="true" name="\Snapshot:Delivered Cmds/sec"/>
+				<PerfmonCounter enabled="true" name="\Snapshot:Delivered Trans/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\SQLServer:Backup Device(*)">
+				<PerfmonCounter enabled="true" name="\Device Throughput Bytes/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR Memory(*)">
+				<PerfmonCounter enabled="false" name="\# Gen 0 Collections"/>
+				<PerfmonCounter enabled="false" name="\# Gen 1 Collections"/>
+				<PerfmonCounter enabled="false" name="\# Gen 2 Collections"/>
+				<PerfmonCounter enabled="false" name="\Promoted Memory from Gen 0"/>
+				<PerfmonCounter enabled="false" name="\Promoted Memory from Gen 1"/>
+				<PerfmonCounter enabled="false" name="\Gen 0 Promoted Bytes/Sec"/>
+				<PerfmonCounter enabled="false" name="\Gen 1 Promoted Bytes/Sec"/>
+				<PerfmonCounter enabled="false" name="\Gen 0 heap size"/>
+				<PerfmonCounter enabled="false" name="\Gen 1 heap size"/>
+				<PerfmonCounter enabled="false" name="\Gen 2 heap size"/>
+				<PerfmonCounter enabled="false" name="\Large Object Heap size"/>
+				<PerfmonCounter enabled="false" name="\Finalization Survivors"/>
+				<PerfmonCounter enabled="false" name="\# GC Handles"/>
+				<PerfmonCounter enabled="false" name="\Allocated Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\# Induced GC"/>
+				<PerfmonCounter enabled="false" name="\% Time in GC"/>
+				<PerfmonCounter enabled="false" name="\# Bytes in all Heaps"/>
+				<PerfmonCounter enabled="false" name="\# Total committed Bytes"/>
+				<PerfmonCounter enabled="false" name="\# Total reserved Bytes"/>
+				<PerfmonCounter enabled="false" name="\# of Pinned Objects"/>
+				<PerfmonCounter enabled="false" name="\# of Sink Blocks in use"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR Interop(*)">
+				<PerfmonCounter enabled="false" name="\# of CCWs"/>
+				<PerfmonCounter enabled="false" name="\# of Stubs"/>
+				<PerfmonCounter enabled="false" name="\# of marshalling"/>
+				<PerfmonCounter enabled="false" name="\# of TLB imports / sec"/>
+				<PerfmonCounter enabled="false" name="\# of TLB exports / sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR Exceptions(*)">
+				<PerfmonCounter enabled="false" name="\# of Exceps Thrown"/>
+				<PerfmonCounter enabled="false" name="\# of Exceps Thrown / sec"/>
+				<PerfmonCounter enabled="false" name="\# of Filters / sec"/>
+				<PerfmonCounter enabled="false" name="\# of Finallys / sec"/>
+				<PerfmonCounter enabled="false" name="\Throw To Catch Depth / sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR Loading(*)">
+				<PerfmonCounter enabled="false" name="\Current Classes Loaded"/>
+				<PerfmonCounter enabled="false" name="\Total Classes Loaded"/>
+				<PerfmonCounter enabled="false" name="\Rate of Classes Loaded"/>
+				<PerfmonCounter enabled="false" name="\Current AppDomains"/>
+				<PerfmonCounter enabled="false" name="\Total Appdomains"/>
+				<PerfmonCounter enabled="false" name="\Rate of AppDomains"/>
+				<PerfmonCounter enabled="false" name="\Current Assemblies"/>
+				<PerfmonCounter enabled="false" name="\Total Assemblies"/>
+				<PerfmonCounter enabled="false" name="\Rate of Assemblies"/>
+				<PerfmonCounter enabled="false" name="\% Time Loading"/>
+				<PerfmonCounter enabled="false" name="\Assembly Search Length"/>
+				<PerfmonCounter enabled="false" name="\Total # of Load Failures"/>
+				<PerfmonCounter enabled="false" name="\Rate of Load Failures"/>
+				<PerfmonCounter enabled="false" name="\Bytes in Loader Heap"/>
+				<PerfmonCounter enabled="false" name="\Total App Domains unloaded"/>
+				<PerfmonCounter enabled="false" name="\Rate of App Domains unloaded"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR LocksAndThreads(*)">
+				<PerfmonCounter enabled="false" name="\Total # of Contentions"/>
+				<PerfmonCounter enabled="false" name="\Contention Rate / sec"/>
+				<PerfmonCounter enabled="false" name="\Current Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Queue Length Peak"/>
+				<PerfmonCounter enabled="false" name="\Queue Length / sec"/>
+				<PerfmonCounter enabled="false" name="\# of current logical Threads"/>
+				<PerfmonCounter enabled="false" name="\# of current physical Threads"/>
+				<PerfmonCounter enabled="false" name="\# of current recognized threads"/>
+				<PerfmonCounter enabled="false" name="\# of total recognized threads"/>
+				<PerfmonCounter enabled="false" name="\rate of recognized threads / sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR Jit(*)">
+				<PerfmonCounter enabled="false" name="\# of Methods Jitted"/>
+				<PerfmonCounter enabled="false" name="\# of IL Bytes Jitted"/>
+				<PerfmonCounter enabled="false" name="\Total # of IL Bytes Jitted"/>
+				<PerfmonCounter enabled="false" name="\IL Bytes Jitted / sec"/>
+				<PerfmonCounter enabled="false" name="\Standard Jit Failures"/>
+				<PerfmonCounter enabled="false" name="\% Time in Jit"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR Remoting(*)">
+				<PerfmonCounter enabled="false" name="\Remote Calls/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Remote Calls"/>
+				<PerfmonCounter enabled="false" name="\Channels"/>
+				<PerfmonCounter enabled="false" name="\Context Proxies"/>
+				<PerfmonCounter enabled="false" name="\Context-Bound Classes Loaded"/>
+				<PerfmonCounter enabled="false" name="\Context-Bound Objects Alloc / sec"/>
+				<PerfmonCounter enabled="false" name="\Contexts"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\.NET CLR Security(*)">
+				<PerfmonCounter enabled="false" name="\Total Runtime Checks"/>
+				<PerfmonCounter enabled="false" name="\% Time Sig. Authenticating"/>
+				<PerfmonCounter enabled="false" name="\# Link Time Checks"/>
+				<PerfmonCounter enabled="false" name="\% Time in RT checks"/>
+				<PerfmonCounter enabled="false" name="\Stack Walk Depth"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\AppleTalk(*)">
+				<PerfmonCounter enabled="false" name="\Packets In/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Out/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes In/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Out/sec"/>
+				<PerfmonCounter enabled="false" name="\Average Time/DDP Packet"/>
+				<PerfmonCounter enabled="false" name="\DDP Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Average Time/AARP Packet"/>
+				<PerfmonCounter enabled="false" name="\AARP Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Average Time/ATP Packet"/>
+				<PerfmonCounter enabled="false" name="\ATP Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Average Time/NBP Packet"/>
+				<PerfmonCounter enabled="false" name="\NBP Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Average Time/ZIP Packet"/>
+				<PerfmonCounter enabled="false" name="\ZIP Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Average Time/RTMP Packet"/>
+				<PerfmonCounter enabled="false" name="\RTMP Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\ATP Retries Local"/>
+				<PerfmonCounter enabled="false" name="\ATP Retries Remote"/>
+				<PerfmonCounter enabled="false" name="\ATP Response Timouts"/>
+				<PerfmonCounter enabled="false" name="\ATP XO Response/Sec"/>
+				<PerfmonCounter enabled="false" name="\ATP ALO Response/Sec"/>
+				<PerfmonCounter enabled="false" name="\ATP Recvd Release/Sec"/>
+				<PerfmonCounter enabled="false" name="\Current NonPaged Pool"/>
+				<PerfmonCounter enabled="false" name="\Packets Routed In/Sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Routed Out/Sec"/>
+				<PerfmonCounter enabled="false" name="\Packets dropped"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Active Server Pages">
+				<PerfmonCounter enabled="false" name="\Debugging Requests"/>
+				<PerfmonCounter enabled="false" name="\Errors During Script Runtime"/>
+				<PerfmonCounter enabled="false" name="\Errors From ASP Preprocessor"/>
+				<PerfmonCounter enabled="false" name="\Errors From Script Compilers"/>
+				<PerfmonCounter enabled="false" name="\Errors/Sec"/>
+				<PerfmonCounter enabled="false" name="\Request Bytes In Total"/>
+				<PerfmonCounter enabled="false" name="\Request Bytes Out Total"/>
+				<PerfmonCounter enabled="false" name="\Request Execution Time"/>
+				<PerfmonCounter enabled="false" name="\Request Wait Time"/>
+				<PerfmonCounter enabled="false" name="\Requests Disconnected"/>
+				<PerfmonCounter enabled="false" name="\Requests Executing"/>
+				<PerfmonCounter enabled="false" name="\Requests Failed Total"/>
+				<PerfmonCounter enabled="false" name="\Requests Not Authorized"/>
+				<PerfmonCounter enabled="false" name="\Requests Not Found"/>
+				<PerfmonCounter enabled="false" name="\Requests Queued"/>
+				<PerfmonCounter enabled="false" name="\Requests Rejected"/>
+				<PerfmonCounter enabled="false" name="\Requests Succeeded"/>
+				<PerfmonCounter enabled="false" name="\Requests Timed Out"/>
+				<PerfmonCounter enabled="false" name="\Requests Total"/>
+				<PerfmonCounter enabled="false" name="\Requests/Sec"/>
+				<PerfmonCounter enabled="false" name="\Script Engines Cached"/>
+				<PerfmonCounter enabled="false" name="\Session Duration"/>
+				<PerfmonCounter enabled="false" name="\Sessions Current"/>
+				<PerfmonCounter enabled="false" name="\Sessions Timed Out"/>
+				<PerfmonCounter enabled="false" name="\Sessions Total"/>
+				<PerfmonCounter enabled="false" name="\Templates Cached"/>
+				<PerfmonCounter enabled="false" name="\Template Cache Hit Rate"/>
+				<PerfmonCounter enabled="false" name="\Template Notifications"/>
+				<PerfmonCounter enabled="false" name="\Transactions Aborted"/>
+				<PerfmonCounter enabled="false" name="\Transactions Committed"/>
+				<PerfmonCounter enabled="false" name="\Transactions Pending"/>
+				<PerfmonCounter enabled="false" name="\Transactions Total"/>
+				<PerfmonCounter enabled="false" name="\Transactions/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\ASP.NET">
+				<PerfmonCounter enabled="false" name="\Application Restarts"/>
+				<PerfmonCounter enabled="false" name="\Applications Running"/>
+				<PerfmonCounter enabled="false" name="\Requests Disconnected"/>
+				<PerfmonCounter enabled="false" name="\Request Execution Time"/>
+				<PerfmonCounter enabled="false" name="\Requests Rejected"/>
+				<PerfmonCounter enabled="false" name="\Requests Queued"/>
+				<PerfmonCounter enabled="false" name="\Worker Processes Running"/>
+				<PerfmonCounter enabled="false" name="\Worker Process Restarts"/>
+				<PerfmonCounter enabled="false" name="\Request Wait Time"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Active"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Abandoned"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Timed Out"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Total"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\ASP.NET Applications(__Total__)">
+				<PerfmonCounter enabled="false" name="\Anonymous Requests"/>
+				<PerfmonCounter enabled="false" name="\Anonymous Requests/Sec"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Entries"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Turnover Rate"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Hits"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Misses"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Cache API Entries"/>
+				<PerfmonCounter enabled="false" name="\Cache API Turnover Rate"/>
+				<PerfmonCounter enabled="false" name="\Cache API Hits"/>
+				<PerfmonCounter enabled="false" name="\Cache API Misses"/>
+				<PerfmonCounter enabled="false" name="\Cache API Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Cache API Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Entries"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Turnover Rate"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Hits"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Misses"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Compilations Total"/>
+				<PerfmonCounter enabled="false" name="\Debugging Requests"/>
+				<PerfmonCounter enabled="false" name="\Errors During Preprocessing"/>
+				<PerfmonCounter enabled="false" name="\Errors During Compilation"/>
+				<PerfmonCounter enabled="false" name="\Errors During Execution"/>
+				<PerfmonCounter enabled="false" name="\Errors Unhandled During Execution"/>
+				<PerfmonCounter enabled="false" name="\Errors Unhandled During Execution/Sec"/>
+				<PerfmonCounter enabled="false" name="\Errors Total"/>
+				<PerfmonCounter enabled="false" name="\Errors Total/Sec"/>
+				<PerfmonCounter enabled="false" name="\Pipeline Instance Count"/>
+				<PerfmonCounter enabled="false" name="\Request Bytes In Total"/>
+				<PerfmonCounter enabled="false" name="\Request Bytes Out Total"/>
+				<PerfmonCounter enabled="false" name="\Requests Executing"/>
+				<PerfmonCounter enabled="false" name="\Requests Failed"/>
+				<PerfmonCounter enabled="false" name="\Requests Not Found"/>
+				<PerfmonCounter enabled="false" name="\Requests Not Authorized"/>
+				<PerfmonCounter enabled="false" name="\Requests Timed Out"/>
+				<PerfmonCounter enabled="false" name="\Requests Succeeded"/>
+				<PerfmonCounter enabled="false" name="\Requests Total"/>
+				<PerfmonCounter enabled="false" name="\Requests/Sec"/>
+				<PerfmonCounter enabled="false" name="\Sessions Active"/>
+				<PerfmonCounter enabled="false" name="\Sessions Abandoned"/>
+				<PerfmonCounter enabled="false" name="\Sessions Timed Out"/>
+				<PerfmonCounter enabled="false" name="\Sessions Total"/>
+				<PerfmonCounter enabled="false" name="\Transactions Aborted"/>
+				<PerfmonCounter enabled="false" name="\Transactions Committed"/>
+				<PerfmonCounter enabled="false" name="\Transactions Pending"/>
+				<PerfmonCounter enabled="false" name="\Transactions Total"/>
+				<PerfmonCounter enabled="false" name="\Transactions/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\ASP.NET Rds V1 Beta2">
+				<PerfmonCounter enabled="false" name="\Application Restarts"/>
+				<PerfmonCounter enabled="false" name="\Applications Running"/>
+				<PerfmonCounter enabled="false" name="\Requests Disconnected"/>
+				<PerfmonCounter enabled="false" name="\Request Execution Time"/>
+				<PerfmonCounter enabled="false" name="\Requests Rejected"/>
+				<PerfmonCounter enabled="false" name="\Requests Queued"/>
+				<PerfmonCounter enabled="false" name="\Worker Processes Running"/>
+				<PerfmonCounter enabled="false" name="\Worker Process Restarts"/>
+				<PerfmonCounter enabled="false" name="\Request Wait Time"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Active"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Abandoned"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Timed Out"/>
+				<PerfmonCounter enabled="false" name="\State Server Sessions Total"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\ASP.NET Apps Rds V1 Beta2(__Total__)">
+				<PerfmonCounter enabled="false" name="\Anonymous Requests"/>
+				<PerfmonCounter enabled="false" name="\Anonymous Requests/Sec"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Entries"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Turnover Rate"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Hits"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Misses"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Cache Total Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Cache API Entries"/>
+				<PerfmonCounter enabled="false" name="\Cache API Turnover Rate"/>
+				<PerfmonCounter enabled="false" name="\Cache API Hits"/>
+				<PerfmonCounter enabled="false" name="\Cache API Misses"/>
+				<PerfmonCounter enabled="false" name="\Cache API Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Cache API Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Entries"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Turnover Rate"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Hits"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Misses"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Hit Ratio"/>
+				<PerfmonCounter enabled="false" name="\Output Cache Hit Ratio Base"/>
+				<PerfmonCounter enabled="false" name="\Compilations Total"/>
+				<PerfmonCounter enabled="false" name="\Debugging Requests"/>
+				<PerfmonCounter enabled="false" name="\Errors During Preprocessing"/>
+				<PerfmonCounter enabled="false" name="\Errors During Compilation"/>
+				<PerfmonCounter enabled="false" name="\Errors During Execution"/>
+				<PerfmonCounter enabled="false" name="\Errors Unhandled During Execution"/>
+				<PerfmonCounter enabled="false" name="\Errors Unhandled During Execution/Sec"/>
+				<PerfmonCounter enabled="false" name="\Errors Total"/>
+				<PerfmonCounter enabled="false" name="\Errors Total/Sec"/>
+				<PerfmonCounter enabled="false" name="\Pipeline Instance Count"/>
+				<PerfmonCounter enabled="false" name="\Request Bytes In Total"/>
+				<PerfmonCounter enabled="false" name="\Request Bytes Out Total"/>
+				<PerfmonCounter enabled="false" name="\Requests Executing"/>
+				<PerfmonCounter enabled="false" name="\Requests Failed"/>
+				<PerfmonCounter enabled="false" name="\Requests Not Found"/>
+				<PerfmonCounter enabled="false" name="\Requests Not Authorized"/>
+				<PerfmonCounter enabled="false" name="\Requests Timed Out"/>
+				<PerfmonCounter enabled="false" name="\Requests Succeeded"/>
+				<PerfmonCounter enabled="false" name="\Requests Total"/>
+				<PerfmonCounter enabled="false" name="\Requests/Sec"/>
+				<PerfmonCounter enabled="false" name="\Sessions Active"/>
+				<PerfmonCounter enabled="false" name="\Sessions Abandoned"/>
+				<PerfmonCounter enabled="false" name="\Sessions Timed Out"/>
+				<PerfmonCounter enabled="false" name="\Sessions Total"/>
+				<PerfmonCounter enabled="false" name="\Transactions Aborted"/>
+				<PerfmonCounter enabled="false" name="\Transactions Committed"/>
+				<PerfmonCounter enabled="false" name="\Transactions Pending"/>
+				<PerfmonCounter enabled="false" name="\Transactions Total"/>
+				<PerfmonCounter enabled="false" name="\Transactions/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Indexing Service Filter">
+				<PerfmonCounter enabled="false" name="\Total indexing speed (MB/hr)"/>
+				<PerfmonCounter enabled="false" name="\Binding time (msec)"/>
+				<PerfmonCounter enabled="false" name="\Indexing speed (MB/hr)"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Indexing Service">
+				<PerfmonCounter enabled="false" name="\Word lists"/>
+				<PerfmonCounter enabled="false" name="\Saved indexes"/>
+				<PerfmonCounter enabled="false" name="\Index size (MB)"/>
+				<PerfmonCounter enabled="false" name="\Files to be indexed"/>
+				<PerfmonCounter enabled="false" name="\Unique keys"/>
+				<PerfmonCounter enabled="false" name="\Running queries"/>
+				<PerfmonCounter enabled="false" name="\Merge progress"/>
+				<PerfmonCounter enabled="false" name="\# documents indexed"/>
+				<PerfmonCounter enabled="false" name="\Total # documents"/>
+				<PerfmonCounter enabled="false" name="\Total # of queries"/>
+				<PerfmonCounter enabled="false" name="\Deferred for indexing"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\DHCP Server">
+				<PerfmonCounter enabled="false" name="\Packets Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Duplicates Dropped/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Expired/sec"/>
+				<PerfmonCounter enabled="false" name="\Milliseconds per packet (Avg)."/>
+				<PerfmonCounter enabled="false" name="\Active Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Conflict Check Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Discovers/sec"/>
+				<PerfmonCounter enabled="false" name="\Offers/sec"/>
+				<PerfmonCounter enabled="false" name="\Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Informs/sec"/>
+				<PerfmonCounter enabled="false" name="\Acks/sec"/>
+				<PerfmonCounter enabled="false" name="\Nacks/sec"/>
+				<PerfmonCounter enabled="false" name="\Declines/sec"/>
+				<PerfmonCounter enabled="false" name="\Releases/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\DNS">
+				<PerfmonCounter enabled="false" name="\Total Query Received"/>
+				<PerfmonCounter enabled="false" name="\Total Query Received/sec"/>
+				<PerfmonCounter enabled="false" name="\UDP Query Received"/>
+				<PerfmonCounter enabled="false" name="\UDP Query Received/sec"/>
+				<PerfmonCounter enabled="false" name="\TCP Query Received"/>
+				<PerfmonCounter enabled="false" name="\TCP Query Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Response Sent"/>
+				<PerfmonCounter enabled="false" name="\Total Response Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\UDP Response Sent"/>
+				<PerfmonCounter enabled="false" name="\UDP Response Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\TCP Response Sent"/>
+				<PerfmonCounter enabled="false" name="\TCP Response Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Recursive Queries"/>
+				<PerfmonCounter enabled="false" name="\Recursive Queries/sec"/>
+				<PerfmonCounter enabled="false" name="\Recursive Send TimeOuts"/>
+				<PerfmonCounter enabled="false" name="\Recursive TimeOut/sec"/>
+				<PerfmonCounter enabled="false" name="\Recursive Query Failure"/>
+				<PerfmonCounter enabled="false" name="\Recursive Query Failure/sec"/>
+				<PerfmonCounter enabled="false" name="\Notify Sent"/>
+				<PerfmonCounter enabled="false" name="\Zone Transfer Request Received"/>
+				<PerfmonCounter enabled="false" name="\Zone Transfer Success"/>
+				<PerfmonCounter enabled="false" name="\Zone Transfer Failure"/>
+				<PerfmonCounter enabled="false" name="\AXFR Request Received"/>
+				<PerfmonCounter enabled="false" name="\AXFR Success Sent"/>
+				<PerfmonCounter enabled="false" name="\IXFR Request Received"/>
+				<PerfmonCounter enabled="false" name="\IXFR Success Sent"/>
+				<PerfmonCounter enabled="false" name="\Notify Received"/>
+				<PerfmonCounter enabled="false" name="\Zone Transfer SOA Request Sent"/>
+				<PerfmonCounter enabled="false" name="\AXFR Request Sent"/>
+				<PerfmonCounter enabled="false" name="\AXFR Response Received"/>
+				<PerfmonCounter enabled="false" name="\AXFR Success Received"/>
+				<PerfmonCounter enabled="false" name="\IXFR Request Sent"/>
+				<PerfmonCounter enabled="false" name="\IXFR Response Received"/>
+				<PerfmonCounter enabled="false" name="\IXFR Success Received"/>
+				<PerfmonCounter enabled="false" name="\IXFR UDP Success Received"/>
+				<PerfmonCounter enabled="false" name="\IXFR TCP Success Received"/>
+				<PerfmonCounter enabled="false" name="\WINS Lookup Received"/>
+				<PerfmonCounter enabled="false" name="\WINS Lookup Received/sec"/>
+				<PerfmonCounter enabled="false" name="\WINS Response Sent"/>
+				<PerfmonCounter enabled="false" name="\WINS Response Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\WINS Reverse Lookup Received"/>
+				<PerfmonCounter enabled="false" name="\WINS Reverse Lookup Received/sec"/>
+				<PerfmonCounter enabled="false" name="\WINS Reverse Response Sent"/>
+				<PerfmonCounter enabled="false" name="\WINS Reverse Response Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update Received"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update NoOperation"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update NoOperation/sec"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update Written to Database"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update Written to Database/sec"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update Rejected"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update TimeOuts"/>
+				<PerfmonCounter enabled="false" name="\Dynamic Update Queued"/>
+				<PerfmonCounter enabled="false" name="\Secure Update Received"/>
+				<PerfmonCounter enabled="false" name="\Secure Update Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Secure Update Failure"/>
+				<PerfmonCounter enabled="false" name="\Database Node Memory"/>
+				<PerfmonCounter enabled="false" name="\Record Flow Memory"/>
+				<PerfmonCounter enabled="false" name="\Caching Memory"/>
+				<PerfmonCounter enabled="false" name="\UDP Message Memory"/>
+				<PerfmonCounter enabled="false" name="\TCP Message Memory"/>
+				<PerfmonCounter enabled="false" name="\Nbstat Memory"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\IAS Authentication Server">
+				<PerfmonCounter enabled="false" name="\Server Up Time"/>
+				<PerfmonCounter enabled="false" name="\Server Reset Time"/>
+				<PerfmonCounter enabled="false" name="\Invalid Requests"/>
+				<PerfmonCounter enabled="false" name="\Invalid Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Malformed Packets"/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators"/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets"/>
+				<PerfmonCounter enabled="false" name="\Unknown Type"/>
+				<PerfmonCounter enabled="false" name="\Access-Requests"/>
+				<PerfmonCounter enabled="false" name="\Duplicate Access-Requests"/>
+				<PerfmonCounter enabled="false" name="\Access-Accepts"/>
+				<PerfmonCounter enabled="false" name="\Access-Rejects"/>
+				<PerfmonCounter enabled="false" name="\Access-Challenges"/>
+				<PerfmonCounter enabled="false" name="\Packets Received"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent"/>
+				<PerfmonCounter enabled="false" name="\Malformed Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators / sec."/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Unknown Type / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Duplicate Access-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Accepts / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Rejects / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Challenges / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Received / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Sent / sec."/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\IAS Authentication Clients">
+				<PerfmonCounter enabled="false" name="\Malformed Packets"/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators"/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets"/>
+				<PerfmonCounter enabled="false" name="\Unknown Type"/>
+				<PerfmonCounter enabled="false" name="\Access-Requests"/>
+				<PerfmonCounter enabled="false" name="\Duplicate Access-Requests"/>
+				<PerfmonCounter enabled="false" name="\Access-Accepts"/>
+				<PerfmonCounter enabled="false" name="\Access-Rejects"/>
+				<PerfmonCounter enabled="false" name="\Access-Challenges"/>
+				<PerfmonCounter enabled="false" name="\Packets Received"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent"/>
+				<PerfmonCounter enabled="false" name="\Malformed Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators / sec."/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Unknown Type / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Duplicate Access-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Accepts / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Rejects / sec."/>
+				<PerfmonCounter enabled="false" name="\Access-Challenges / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Received / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Sent / sec."/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\IAS Accounting Server">
+				<PerfmonCounter enabled="false" name="\Server Up Time"/>
+				<PerfmonCounter enabled="false" name="\Server Reset Time"/>
+				<PerfmonCounter enabled="false" name="\Invalid Requests"/>
+				<PerfmonCounter enabled="false" name="\Invalid Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Malformed Packets"/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators"/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets"/>
+				<PerfmonCounter enabled="false" name="\Unknown Type"/>
+				<PerfmonCounter enabled="false" name="\Accounting-Requests"/>
+				<PerfmonCounter enabled="false" name="\Duplicate Accounting-Requests"/>
+				<PerfmonCounter enabled="false" name="\No Record"/>
+				<PerfmonCounter enabled="false" name="\Accounting-Responses"/>
+				<PerfmonCounter enabled="false" name="\Packets Received"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent"/>
+				<PerfmonCounter enabled="false" name="\Malformed Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators / sec."/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Unknown Type / sec."/>
+				<PerfmonCounter enabled="false" name="\Accounting-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Duplicate Accounting-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\No Record / sec."/>
+				<PerfmonCounter enabled="false" name="\Accounting-Responses / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Received / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Sent / sec."/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\IAS Accounting Clients">
+				<PerfmonCounter enabled="false" name="\Malformed Packets"/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators"/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets"/>
+				<PerfmonCounter enabled="false" name="\Unknown Type"/>
+				<PerfmonCounter enabled="false" name="\Accounting-Requests"/>
+				<PerfmonCounter enabled="false" name="\Duplicate Accounting-Requests"/>
+				<PerfmonCounter enabled="false" name="\No Record"/>
+				<PerfmonCounter enabled="false" name="\Accounting-Responses"/>
+				<PerfmonCounter enabled="false" name="\Packets Received"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent"/>
+				<PerfmonCounter enabled="false" name="\Malformed Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Bad Authenticators / sec."/>
+				<PerfmonCounter enabled="false" name="\Dropped Packets / sec."/>
+				<PerfmonCounter enabled="false" name="\Unknown Type / sec."/>
+				<PerfmonCounter enabled="false" name="\Accounting-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\Duplicate Accounting-Requests / sec."/>
+				<PerfmonCounter enabled="false" name="\No Record / sec."/>
+				<PerfmonCounter enabled="false" name="\Accounting-Responses / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Received / sec."/>
+				<PerfmonCounter enabled="false" name="\Packets Sent / sec."/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Internet Information Services Global">
+				<PerfmonCounter enabled="false" name="\Total Allowed Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Rejected Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Current Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Measured Async I/O Bandwidth Usage"/>
+				<PerfmonCounter enabled="false" name="\Current Files Cached"/>
+				<PerfmonCounter enabled="false" name="\Total Files Cached"/>
+				<PerfmonCounter enabled="false" name="\File Cache Hits"/>
+				<PerfmonCounter enabled="false" name="\File Cache Misses"/>
+				<PerfmonCounter enabled="false" name="\File Cache Hits %"/>
+				<PerfmonCounter enabled="false" name="\File Cache Flushes"/>
+				<PerfmonCounter enabled="false" name="\Current File Cache Memory Usage"/>
+				<PerfmonCounter enabled="false" name="\Maximum File Cache Memory Usage"/>
+				<PerfmonCounter enabled="false" name="\Active Flushed Entries"/>
+				<PerfmonCounter enabled="false" name="\Total Flushed Files"/>
+				<PerfmonCounter enabled="false" name="\Current URIs Cached"/>
+				<PerfmonCounter enabled="false" name="\Total URIs Cached"/>
+				<PerfmonCounter enabled="false" name="\URI Cache Hits"/>
+				<PerfmonCounter enabled="false" name="\URI Cache Misses"/>
+				<PerfmonCounter enabled="false" name="\URI Cache Hits %"/>
+				<PerfmonCounter enabled="false" name="\URI Cache Flushes"/>
+				<PerfmonCounter enabled="false" name="\Total Flushed URIs"/>
+				<PerfmonCounter enabled="false" name="\Current BLOBs Cached"/>
+				<PerfmonCounter enabled="false" name="\Total BLOBs Cached"/>
+				<PerfmonCounter enabled="false" name="\BLOB Cache Hits"/>
+				<PerfmonCounter enabled="false" name="\BLOB Cache Misses"/>
+				<PerfmonCounter enabled="false" name="\BLOB Cache Hits %"/>
+				<PerfmonCounter enabled="false" name="\BLOB Cache Flushes"/>
+				<PerfmonCounter enabled="false" name="\Total Flushed BLOBs"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Http Indexing Service">
+				<PerfmonCounter enabled="false" name="\Cache items"/>
+				<PerfmonCounter enabled="false" name="\% Cache hits"/>
+				<PerfmonCounter enabled="false" name="\Total cache accesses 1"/>
+				<PerfmonCounter enabled="false" name="\% Cache misses"/>
+				<PerfmonCounter enabled="false" name="\Total cache accesses 2"/>
+				<PerfmonCounter enabled="false" name="\Active queries"/>
+				<PerfmonCounter enabled="false" name="\Total queries"/>
+				<PerfmonCounter enabled="false" name="\Queries per minute"/>
+				<PerfmonCounter enabled="false" name="\Current requests queued"/>
+				<PerfmonCounter enabled="false" name="\Total requests rejected"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\MacFile Server">
+				<PerfmonCounter enabled="false" name="\Max Paged Memory"/>
+				<PerfmonCounter enabled="false" name="\Current Paged Memory"/>
+				<PerfmonCounter enabled="false" name="\Max NonPaged Memory"/>
+				<PerfmonCounter enabled="false" name="\Current NonPaged memory"/>
+				<PerfmonCounter enabled="false" name="\Current Sessions"/>
+				<PerfmonCounter enabled="false" name="\Maximum Sessions"/>
+				<PerfmonCounter enabled="false" name="\Current Files Open"/>
+				<PerfmonCounter enabled="false" name="\Maximum Files Open"/>
+				<PerfmonCounter enabled="false" name="\Failed Logons"/>
+				<PerfmonCounter enabled="false" name="\Data Read/sec"/>
+				<PerfmonCounter enabled="false" name="\Data Written/sec"/>
+				<PerfmonCounter enabled="false" name="\Data Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Data Transmitted/sec"/>
+				<PerfmonCounter enabled="false" name="\Current Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Maximum Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Current Threads"/>
+				<PerfmonCounter enabled="false" name="\Maximum Threads"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Distributed Transaction Coordinator">
+				<PerfmonCounter enabled="false" name="\Active Transactions"/>
+				<PerfmonCounter enabled="false" name="\Committed Transactions"/>
+				<PerfmonCounter enabled="false" name="\Aborted Transactions"/>
+				<PerfmonCounter enabled="false" name="\In Doubt Transactions"/>
+				<PerfmonCounter enabled="false" name="\Active Transactions Maximum"/>
+				<PerfmonCounter enabled="false" name="\Force Committed Transactions"/>
+				<PerfmonCounter enabled="false" name="\Force Aborted Transactions"/>
+				<PerfmonCounter enabled="false" name="\Response Time -- Minimum"/>
+				<PerfmonCounter enabled="false" name="\Response Time -- Average"/>
+				<PerfmonCounter enabled="false" name="\Response Time -- Maximum"/>
+				<PerfmonCounter enabled="false" name="\Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Committed Transactions/sec"/>
+				<PerfmonCounter enabled="false" name="\Aborted Transactions/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\FTP Service(_Total)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Sent"/>
+				<PerfmonCounter enabled="false" name="\Total Files Received"/>
+				<PerfmonCounter enabled="false" name="\Total Files Transferred"/>
+				<PerfmonCounter enabled="false" name="\Current Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum Connections"/>
+				<PerfmonCounter enabled="false" name="\Total Connection Attempts (all instances)"/>
+				<PerfmonCounter enabled="false" name="\Total Logon Attempts"/>
+				<PerfmonCounter enabled="false" name="\FTP Service Uptime"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\FTP Service(Default FTP Site)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Sent"/>
+				<PerfmonCounter enabled="false" name="\Total Files Received"/>
+				<PerfmonCounter enabled="false" name="\Total Files Transferred"/>
+				<PerfmonCounter enabled="false" name="\Current Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum Connections"/>
+				<PerfmonCounter enabled="false" name="\Total Connection Attempts (all instances)"/>
+				<PerfmonCounter enabled="false" name="\Total Logon Attempts"/>
+				<PerfmonCounter enabled="false" name="\FTP Service Uptime"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Microsoft Gatherer Projects(*)">
+				<PerfmonCounter enabled="false" name="\Document Additions"/>
+				<PerfmonCounter enabled="false" name="\Document Add Rate"/>
+				<PerfmonCounter enabled="false" name="\Document Moves/Renames"/>
+				<PerfmonCounter enabled="false" name="\Document Move and Rename Rate"/>
+				<PerfmonCounter enabled="false" name="\Document Deletes"/>
+				<PerfmonCounter enabled="false" name="\Document Delete Rate"/>
+				<PerfmonCounter enabled="false" name="\Document Modifies"/>
+				<PerfmonCounter enabled="false" name="\Document Modifies Rate"/>
+				<PerfmonCounter enabled="false" name="\Waiting Documents"/>
+				<PerfmonCounter enabled="false" name="\Documents In Progress"/>
+				<PerfmonCounter enabled="false" name="\Documents On Hold"/>
+				<PerfmonCounter enabled="false" name="\Delayed Documents"/>
+				<PerfmonCounter enabled="false" name="\URLs in History"/>
+				<PerfmonCounter enabled="false" name="\Processed Documents"/>
+				<PerfmonCounter enabled="false" name="\Processed Documents Rate"/>
+				<PerfmonCounter enabled="false" name="\Status Success"/>
+				<PerfmonCounter enabled="false" name="\Success Rate"/>
+				<PerfmonCounter enabled="false" name="\Status Error"/>
+				<PerfmonCounter enabled="false" name="\Error Rate"/>
+				<PerfmonCounter enabled="false" name="\HTTP Errors"/>
+				<PerfmonCounter enabled="false" name="\HTTP Errors Rate"/>
+				<PerfmonCounter enabled="false" name="\File Errors"/>
+				<PerfmonCounter enabled="false" name="\File Errors Rate"/>
+				<PerfmonCounter enabled="false" name="\Accessed HTTP"/>
+				<PerfmonCounter enabled="false" name="\Accessed HTTP Rate"/>
+				<PerfmonCounter enabled="false" name="\Accessed Files"/>
+				<PerfmonCounter enabled="false" name="\Accessed File Rate"/>
+				<PerfmonCounter enabled="false" name="\Filtered HTML"/>
+				<PerfmonCounter enabled="false" name="\Filtered HTML Rate"/>
+				<PerfmonCounter enabled="false" name="\Filtered Office"/>
+				<PerfmonCounter enabled="false" name="\Filtered Office Rate"/>
+				<PerfmonCounter enabled="false" name="\Filtered Text"/>
+				<PerfmonCounter enabled="false" name="\Filtered Text Rate"/>
+				<PerfmonCounter enabled="false" name="\Crawl In Progress Flag"/>
+				<PerfmonCounter enabled="false" name="\Gatherer Paused Flag"/>
+				<PerfmonCounter enabled="false" name="\Recovery In Progress Flag"/>
+				<PerfmonCounter enabled="false" name="\Not Modified"/>
+				<PerfmonCounter enabled="false" name="\Iterating History In Progress Flag"/>
+				<PerfmonCounter enabled="false" name="\Current Crawl is Incremental"/>
+				<PerfmonCounter enabled="false" name="\Filtering Documents"/>
+				<PerfmonCounter enabled="false" name="\Started Documents"/>
+				<PerfmonCounter enabled="false" name="\Retries"/>
+				<PerfmonCounter enabled="false" name="\Retries Rate"/>
+				<PerfmonCounter enabled="false" name="\Adaptive Crawl Accepts"/>
+				<PerfmonCounter enabled="false" name="\Adaptive Crawl Excludes"/>
+				<PerfmonCounter enabled="false" name="\Adaptive Crawl Error Samples"/>
+				<PerfmonCounter enabled="false" name="\Adaptive Crawl Errors"/>
+				<PerfmonCounter enabled="false" name="\Adaptive Crawl False Positives"/>
+				<PerfmonCounter enabled="false" name="\Adaptive Crawl Total"/>
+				<PerfmonCounter enabled="false" name="\Changed Documents"/>
+				<PerfmonCounter enabled="false" name="\Unique Documents"/>
+				<PerfmonCounter enabled="false" name="\History Recovery Progress"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Microsoft Search Indexer Catalogs(*)">
+				<PerfmonCounter enabled="false" name="\Wordlists"/>
+				<PerfmonCounter enabled="false" name="\Persistent Indexes"/>
+				<PerfmonCounter enabled="false" name="\Index Size (MBytes)"/>
+				<PerfmonCounter enabled="false" name="\Files To Be Filtered"/>
+				<PerfmonCounter enabled="false" name="\Unique Keys"/>
+				<PerfmonCounter enabled="false" name="\Merge Progress"/>
+				<PerfmonCounter enabled="false" name="\Documents Filtered"/>
+				<PerfmonCounter enabled="false" name="\Number of documents"/>
+				<PerfmonCounter enabled="false" name="\Documents In Progress"/>
+				<PerfmonCounter enabled="false" name="\Active Documents"/>
+				<PerfmonCounter enabled="false" name="\Build In Progress"/>
+				<PerfmonCounter enabled="false" name="\Number Of Propagations"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Microsoft Search">
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Threads"/>
+				<PerfmonCounter enabled="false" name="\Active Threads"/>
+				<PerfmonCounter enabled="false" name="\Queries"/>
+				<PerfmonCounter enabled="false" name="\Query Rate"/>
+				<PerfmonCounter enabled="false" name="\Failed Queries"/>
+				<PerfmonCounter enabled="false" name="\Failed Query Rate"/>
+				<PerfmonCounter enabled="false" name="\Results"/>
+				<PerfmonCounter enabled="false" name="\Result Rate"/>
+				<PerfmonCounter enabled="false" name="\Succeeded Queries"/>
+				<PerfmonCounter enabled="false" name="\Succeeded Query Rate"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Microsoft Search Catalogs(*)">
+				<PerfmonCounter enabled="false" name="\Queries"/>
+				<PerfmonCounter enabled="false" name="\Queries Rate"/>
+				<PerfmonCounter enabled="false" name="\Failed Queries"/>
+				<PerfmonCounter enabled="false" name="\Failed Queries Rate"/>
+				<PerfmonCounter enabled="false" name="\Results"/>
+				<PerfmonCounter enabled="false" name="\Results Rate"/>
+				<PerfmonCounter enabled="false" name="\Successful Queries"/>
+				<PerfmonCounter enabled="false" name="\Successful Queries Rate"/>
+				<PerfmonCounter enabled="false" name="\Persistent Indexes"/>
+				<PerfmonCounter enabled="false" name="\Catalog Size (MBytes)"/>
+				<PerfmonCounter enabled="false" name="\Unique Keys"/>
+				<PerfmonCounter enabled="false" name="\Number Of Documents"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Microsoft Gatherer">
+				<PerfmonCounter enabled="false" name="\Notification Sources"/>
+				<PerfmonCounter enabled="false" name="\Ext. Notifications Received"/>
+				<PerfmonCounter enabled="false" name="\Ext. Notifications Rate"/>
+				<PerfmonCounter enabled="false" name="\Admin Clients"/>
+				<PerfmonCounter enabled="false" name="\Heartbeats"/>
+				<PerfmonCounter enabled="false" name="\Heartbeats Rate"/>
+				<PerfmonCounter enabled="false" name="\Filtering Threads"/>
+				<PerfmonCounter enabled="false" name="\Idle Threads"/>
+				<PerfmonCounter enabled="false" name="\Document Entries"/>
+				<PerfmonCounter enabled="false" name="\Performance Level"/>
+				<PerfmonCounter enabled="false" name="\Active Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Filter Processes"/>
+				<PerfmonCounter enabled="false" name="\Filter Processes Max"/>
+				<PerfmonCounter enabled="false" name="\Filter Process Created"/>
+				<PerfmonCounter enabled="false" name="\Delayed Documents"/>
+				<PerfmonCounter enabled="false" name="\Server Objects"/>
+				<PerfmonCounter enabled="false" name="\Server Objects Created"/>
+				<PerfmonCounter enabled="false" name="\Filter Objects"/>
+				<PerfmonCounter enabled="false" name="\Documents Filtered"/>
+				<PerfmonCounter enabled="false" name="\Documents Filtered Rate"/>
+				<PerfmonCounter enabled="false" name="\Accessing Robots.Txt File"/>
+				<PerfmonCounter enabled="false" name="\Robots.Txt Requests"/>
+				<PerfmonCounter enabled="false" name="\Time Outs"/>
+				<PerfmonCounter enabled="false" name="\Servers Currently Unavailable"/>
+				<PerfmonCounter enabled="false" name="\Servers Unavailable"/>
+				<PerfmonCounter enabled="false" name="\Threads Accessing Network"/>
+				<PerfmonCounter enabled="false" name="\Threads In Plug-ins"/>
+				<PerfmonCounter enabled="false" name="\Documents Successfully Filtered"/>
+				<PerfmonCounter enabled="false" name="\Documents Successfully Filtered Rate"/>
+				<PerfmonCounter enabled="false" name="\Documents Delayed Retry"/>
+				<PerfmonCounter enabled="false" name="\Word Breakers Cached"/>
+				<PerfmonCounter enabled="false" name="\Stemmers Cached"/>
+				<PerfmonCounter enabled="false" name="\All Notifications Received"/>
+				<PerfmonCounter enabled="false" name="\Notifications Rate"/>
+				<PerfmonCounter enabled="false" name="\System IO traffic rate"/>
+				<PerfmonCounter enabled="false" name="\Reason to back off"/>
+				<PerfmonCounter enabled="false" name="\Threads blocked due to back off"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\NNTP Server(_Total)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Connections"/>
+				<PerfmonCounter enabled="false" name="\Total SSL Connections"/>
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum Connections"/>
+				<PerfmonCounter enabled="false" name="\Current Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Outbound Connections"/>
+				<PerfmonCounter enabled="false" name="\Total Outbound Connections Failed"/>
+				<PerfmonCounter enabled="false" name="\Current Outbound Connections"/>
+				<PerfmonCounter enabled="false" name="\Failed Outbound Logons"/>
+				<PerfmonCounter enabled="false" name="\Total Pull Feeds"/>
+				<PerfmonCounter enabled="false" name="\Total Push Feeds"/>
+				<PerfmonCounter enabled="false" name="\Total Passive Feeds"/>
+				<PerfmonCounter enabled="false" name="\Articles Sent"/>
+				<PerfmonCounter enabled="false" name="\Articles Received"/>
+				<PerfmonCounter enabled="false" name="\Articles Total"/>
+				<PerfmonCounter enabled="false" name="\Articles Posted"/>
+				<PerfmonCounter enabled="false" name="\Article Map Entries"/>
+				<PerfmonCounter enabled="false" name="\History Map Entries"/>
+				<PerfmonCounter enabled="false" name="\Xover Entries"/>
+				<PerfmonCounter enabled="false" name="\Control Messages Received"/>
+				<PerfmonCounter enabled="false" name="\Control Messages Failed"/>
+				<PerfmonCounter enabled="false" name="\Moderated Postings Sent"/>
+				<PerfmonCounter enabled="false" name="\Moderated Postings Failed"/>
+				<PerfmonCounter enabled="false" name="\Sessions Flow Controlled"/>
+				<PerfmonCounter enabled="false" name="\Articles Deleted"/>
+				<PerfmonCounter enabled="false" name="\Articles Sent/Sec"/>
+				<PerfmonCounter enabled="false" name="\Articles Received/Sec"/>
+				<PerfmonCounter enabled="false" name="\Articles Posted/Sec"/>
+				<PerfmonCounter enabled="false" name="\Article Map Entries/Sec"/>
+				<PerfmonCounter enabled="false" name="\History Map Entries/Sec"/>
+				<PerfmonCounter enabled="false" name="\Xover Entries/Sec"/>
+				<PerfmonCounter enabled="false" name="\Articles Deleted/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\NNTP Server(*)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Connections"/>
+				<PerfmonCounter enabled="false" name="\Total SSL Connections"/>
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum Connections"/>
+				<PerfmonCounter enabled="false" name="\Current Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Outbound Connections"/>
+				<PerfmonCounter enabled="false" name="\Total Outbound Connections Failed"/>
+				<PerfmonCounter enabled="false" name="\Current Outbound Connections"/>
+				<PerfmonCounter enabled="false" name="\Failed Outbound Logons"/>
+				<PerfmonCounter enabled="false" name="\Total Pull Feeds"/>
+				<PerfmonCounter enabled="false" name="\Total Push Feeds"/>
+				<PerfmonCounter enabled="false" name="\Total Passive Feeds"/>
+				<PerfmonCounter enabled="false" name="\Articles Sent"/>
+				<PerfmonCounter enabled="false" name="\Articles Received"/>
+				<PerfmonCounter enabled="false" name="\Articles Total"/>
+				<PerfmonCounter enabled="false" name="\Articles Posted"/>
+				<PerfmonCounter enabled="false" name="\Article Map Entries"/>
+				<PerfmonCounter enabled="false" name="\History Map Entries"/>
+				<PerfmonCounter enabled="false" name="\Xover Entries"/>
+				<PerfmonCounter enabled="false" name="\Control Messages Received"/>
+				<PerfmonCounter enabled="false" name="\Control Messages Failed"/>
+				<PerfmonCounter enabled="false" name="\Moderated Postings Sent"/>
+				<PerfmonCounter enabled="false" name="\Moderated Postings Failed"/>
+				<PerfmonCounter enabled="false" name="\Sessions Flow Controlled"/>
+				<PerfmonCounter enabled="false" name="\Articles Deleted"/>
+				<PerfmonCounter enabled="false" name="\Articles Sent/Sec"/>
+				<PerfmonCounter enabled="false" name="\Articles Received/Sec"/>
+				<PerfmonCounter enabled="false" name="\Articles Posted/Sec"/>
+				<PerfmonCounter enabled="false" name="\Article Map Entries/Sec"/>
+				<PerfmonCounter enabled="false" name="\History Map Entries/Sec"/>
+				<PerfmonCounter enabled="false" name="\Xover Entries/Sec"/>
+				<PerfmonCounter enabled="false" name="\Articles Deleted/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\NNTP Commands(_Total)">
+				<PerfmonCounter enabled="false" name="\Article Commands"/>
+				<PerfmonCounter enabled="false" name="\Article Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Group Commands"/>
+				<PerfmonCounter enabled="false" name="\Group Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Help Commands"/>
+				<PerfmonCounter enabled="false" name="\Help Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\IHave Commands"/>
+				<PerfmonCounter enabled="false" name="\IHave Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Last Commands"/>
+				<PerfmonCounter enabled="false" name="\Last Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\List Commands"/>
+				<PerfmonCounter enabled="false" name="\List Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Newgroups Commands"/>
+				<PerfmonCounter enabled="false" name="\Newgroups Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Newnews Commands"/>
+				<PerfmonCounter enabled="false" name="\Newnews Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Next Commands"/>
+				<PerfmonCounter enabled="false" name="\Next Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Post Commands"/>
+				<PerfmonCounter enabled="false" name="\Post Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Quit Commands"/>
+				<PerfmonCounter enabled="false" name="\Quit Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Stat Commands"/>
+				<PerfmonCounter enabled="false" name="\Stat Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Logon Attempts"/>
+				<PerfmonCounter enabled="false" name="\Logon Failures"/>
+				<PerfmonCounter enabled="false" name="\Logon Attempts/Sec"/>
+				<PerfmonCounter enabled="false" name="\Logon Failures/Sec"/>
+				<PerfmonCounter enabled="false" name="\Check Commands"/>
+				<PerfmonCounter enabled="false" name="\Check Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Takethis Commands"/>
+				<PerfmonCounter enabled="false" name="\Takethis Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Mode Commands"/>
+				<PerfmonCounter enabled="false" name="\Mode Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Search Commands"/>
+				<PerfmonCounter enabled="false" name="\Search Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XHdr Commands"/>
+				<PerfmonCounter enabled="false" name="\XHdr Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XOver Commands"/>
+				<PerfmonCounter enabled="false" name="\XOver Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XPat Commands"/>
+				<PerfmonCounter enabled="false" name="\XPat Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XReplic Commands"/>
+				<PerfmonCounter enabled="false" name="\XReplic Commands/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\NNTP Commands(*)">
+				<PerfmonCounter enabled="false" name="\Article Commands"/>
+				<PerfmonCounter enabled="false" name="\Article Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Group Commands"/>
+				<PerfmonCounter enabled="false" name="\Group Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Help Commands"/>
+				<PerfmonCounter enabled="false" name="\Help Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\IHave Commands"/>
+				<PerfmonCounter enabled="false" name="\IHave Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Last Commands"/>
+				<PerfmonCounter enabled="false" name="\Last Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\List Commands"/>
+				<PerfmonCounter enabled="false" name="\List Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Newgroups Commands"/>
+				<PerfmonCounter enabled="false" name="\Newgroups Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Newnews Commands"/>
+				<PerfmonCounter enabled="false" name="\Newnews Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Next Commands"/>
+				<PerfmonCounter enabled="false" name="\Next Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Post Commands"/>
+				<PerfmonCounter enabled="false" name="\Post Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Quit Commands"/>
+				<PerfmonCounter enabled="false" name="\Quit Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Stat Commands"/>
+				<PerfmonCounter enabled="false" name="\Stat Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Logon Attempts"/>
+				<PerfmonCounter enabled="false" name="\Logon Failures"/>
+				<PerfmonCounter enabled="false" name="\Logon Attempts/Sec"/>
+				<PerfmonCounter enabled="false" name="\Logon Failures/Sec"/>
+				<PerfmonCounter enabled="false" name="\Check Commands"/>
+				<PerfmonCounter enabled="false" name="\Check Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Takethis Commands"/>
+				<PerfmonCounter enabled="false" name="\Takethis Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Mode Commands"/>
+				<PerfmonCounter enabled="false" name="\Mode Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\Search Commands"/>
+				<PerfmonCounter enabled="false" name="\Search Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XHdr Commands"/>
+				<PerfmonCounter enabled="false" name="\XHdr Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XOver Commands"/>
+				<PerfmonCounter enabled="false" name="\XOver Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XPat Commands"/>
+				<PerfmonCounter enabled="false" name="\XPat Commands/Sec"/>
+				<PerfmonCounter enabled="false" name="\XReplic Commands"/>
+				<PerfmonCounter enabled="false" name="\XReplic Commands/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Windows Media Station Service">
+				<PerfmonCounter enabled="false" name="\Streams"/>
+				<PerfmonCounter enabled="false" name="\Stations"/>
+				<PerfmonCounter enabled="false" name="\Controllers"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Windows Media Unicast Service">
+				<PerfmonCounter enabled="false" name="\Pending Connections"/>
+				<PerfmonCounter enabled="false" name="\Active Streams"/>
+				<PerfmonCounter enabled="false" name="\Active TCP Streams"/>
+				<PerfmonCounter enabled="false" name="\Active UDP Streams"/>
+				<PerfmonCounter enabled="false" name="\Active Live Unicast Streams"/>
+				<PerfmonCounter enabled="false" name="\Connected Clients"/>
+				<PerfmonCounter enabled="false" name="\Allocated Bandwidth"/>
+				<PerfmonCounter enabled="false" name="\Scheduling Rate"/>
+				<PerfmonCounter enabled="false" name="\Stream Errors"/>
+				<PerfmonCounter enabled="false" name="\Late Reads"/>
+				<PerfmonCounter enabled="false" name="\Connection Rate"/>
+				<PerfmonCounter enabled="false" name="\Stream Terminations"/>
+				<PerfmonCounter enabled="false" name="\HTTP Streams"/>
+				<PerfmonCounter enabled="false" name="\UDP Resend Requests"/>
+				<PerfmonCounter enabled="false" name="\UDP Resends Sent"/>
+				<PerfmonCounter enabled="false" name="\Plugin Events"/>
+				<PerfmonCounter enabled="false" name="\Authorization Requests"/>
+				<PerfmonCounter enabled="false" name="\Authentication Requests"/>
+				<PerfmonCounter enabled="false" name="\Plugin Errors"/>
+				<PerfmonCounter enabled="false" name="\Authorizations Refused"/>
+				<PerfmonCounter enabled="false" name="\Authentications Denied"/>
+				<PerfmonCounter enabled="false" name="\HTTP Streams Reading Header"/>
+				<PerfmonCounter enabled="false" name="\HTTP Streams Streaming Body"/>
+				<PerfmonCounter enabled="false" name="\Aggregate Send Rate"/>
+				<PerfmonCounter enabled="false" name="\Aggregate Read Rate"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SMTP NTFS Store Driver(_Total)">
+				<PerfmonCounter enabled="false" name="\Messages in the queue directory"/>
+				<PerfmonCounter enabled="false" name="\Messages allocated"/>
+				<PerfmonCounter enabled="false" name="\Messages deleted"/>
+				<PerfmonCounter enabled="false" name="\Messages enumerated"/>
+				<PerfmonCounter enabled="false" name="\Open message bodies"/>
+				<PerfmonCounter enabled="false" name="\Open message streams"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SMTP NTFS Store Driver(*)">
+				<PerfmonCounter enabled="false" name="\Messages in the queue directory"/>
+				<PerfmonCounter enabled="false" name="\Messages allocated"/>
+				<PerfmonCounter enabled="false" name="\Messages deleted"/>
+				<PerfmonCounter enabled="false" name="\Messages enumerated"/>
+				<PerfmonCounter enabled="false" name="\Open message bodies"/>
+				<PerfmonCounter enabled="false" name="\Open message streams"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\LogicalDisk(C:)">
+				<PerfmonCounter enabled="false" name="\% Free Space"/>
+				<PerfmonCounter enabled="false" name="\Free Megabytes"/>
+				<PerfmonCounter enabled="false" name="\Current Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Read Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Read Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Write Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Write Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Write"/>
+				<PerfmonCounter enabled="false" name="\Disk Transfers/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Writes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Write"/>
+				<PerfmonCounter enabled="false" name="\% Idle Time"/>
+				<PerfmonCounter enabled="false" name="\Split IO/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\LogicalDisk(*)">
+				<PerfmonCounter enabled="true" name="\% Free Space"/>
+				<PerfmonCounter enabled="true" name="\Free Megabytes"/>
+				<PerfmonCounter enabled="true" name="\Current Disk Queue Length"/>
+				<PerfmonCounter enabled="true" name="\% Disk Time"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Queue Length"/>
+				<PerfmonCounter enabled="true" name="\% Disk Read Time"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Read Queue Length"/>
+				<PerfmonCounter enabled="true" name="\% Disk Write Time"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Write Queue Length"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk sec/Transfer"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk sec/Read"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk sec/Write"/>
+				<PerfmonCounter enabled="true" name="\Disk Transfers/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Reads/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Writes/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Read Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Write Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Bytes/Transfer"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Bytes/Read"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Bytes/Write"/>
+				<PerfmonCounter enabled="true" name="\% Idle Time"/>
+				<PerfmonCounter enabled="true" name="\Split IO/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\LogicalDisk(_Total)">
+				<PerfmonCounter enabled="false" name="\% Free Space"/>
+				<PerfmonCounter enabled="false" name="\Free Megabytes"/>
+				<PerfmonCounter enabled="false" name="\Current Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Read Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Read Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Write Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Write Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Write"/>
+				<PerfmonCounter enabled="false" name="\Disk Transfers/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Writes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Write"/>
+				<PerfmonCounter enabled="false" name="\% Idle Time"/>
+				<PerfmonCounter enabled="false" name="\Split IO/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\PhysicalDisk(0 C:)">
+				<PerfmonCounter enabled="false" name="\Current Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Read Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Read Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Write Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Write Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Write"/>
+				<PerfmonCounter enabled="false" name="\Disk Transfers/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Writes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Write"/>
+				<PerfmonCounter enabled="false" name="\% Idle Time"/>
+				<PerfmonCounter enabled="false" name="\Split IO/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\PhysicalDisk(*)">
+				<PerfmonCounter enabled="true" name="\Current Disk Queue Length"/>
+				<PerfmonCounter enabled="true" name="\% Disk Time"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Queue Length"/>
+				<PerfmonCounter enabled="true" name="\% Disk Read Time"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Read Queue Length"/>
+				<PerfmonCounter enabled="true" name="\% Disk Write Time"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Write Queue Length"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk sec/Transfer"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk sec/Read"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk sec/Write"/>
+				<PerfmonCounter enabled="true" name="\Disk Transfers/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Reads/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Writes/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Read Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Disk Write Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Bytes/Transfer"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Bytes/Read"/>
+				<PerfmonCounter enabled="true" name="\Avg. Disk Bytes/Write"/>
+				<PerfmonCounter enabled="true" name="\% Idle Time"/>
+				<PerfmonCounter enabled="true" name="\Split IO/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\PhysicalDisk(_Total)">
+				<PerfmonCounter enabled="false" name="\Current Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Read Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Read Queue Length"/>
+				<PerfmonCounter enabled="false" name="\% Disk Write Time"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Write Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk sec/Write"/>
+				<PerfmonCounter enabled="false" name="\Disk Transfers/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Writes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Disk Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Transfer"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Read"/>
+				<PerfmonCounter enabled="false" name="\Avg. Disk Bytes/Write"/>
+				<PerfmonCounter enabled="false" name="\% Idle Time"/>
+				<PerfmonCounter enabled="false" name="\Split IO/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Server">
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Transmitted/sec"/>
+				<PerfmonCounter enabled="false" name="\Sessions Timed Out"/>
+				<PerfmonCounter enabled="false" name="\Sessions Errored Out"/>
+				<PerfmonCounter enabled="false" name="\Sessions Logged Off"/>
+				<PerfmonCounter enabled="false" name="\Sessions Forced Off"/>
+				<PerfmonCounter enabled="false" name="\Errors Logon"/>
+				<PerfmonCounter enabled="false" name="\Errors Access Permissions"/>
+				<PerfmonCounter enabled="false" name="\Errors Granted Access"/>
+				<PerfmonCounter enabled="false" name="\Errors System"/>
+				<PerfmonCounter enabled="false" name="\Blocking Requests Rejected"/>
+				<PerfmonCounter enabled="false" name="\Work Item Shortages"/>
+				<PerfmonCounter enabled="false" name="\Files Opened Total"/>
+				<PerfmonCounter enabled="false" name="\Files Open"/>
+				<PerfmonCounter enabled="false" name="\Server Sessions"/>
+				<PerfmonCounter enabled="false" name="\File Directory Searches"/>
+				<PerfmonCounter enabled="false" name="\Pool Nonpaged Bytes"/>
+				<PerfmonCounter enabled="false" name="\Pool Nonpaged Failures"/>
+				<PerfmonCounter enabled="false" name="\Pool Nonpaged Peak"/>
+				<PerfmonCounter enabled="false" name="\Pool Paged Bytes"/>
+				<PerfmonCounter enabled="false" name="\Pool Paged Failures"/>
+				<PerfmonCounter enabled="false" name="\Pool Paged Peak"/>
+				<PerfmonCounter enabled="false" name="\Context Blocks Queued/sec"/>
+				<PerfmonCounter enabled="false" name="\Logon/sec"/>
+				<PerfmonCounter enabled="false" name="\Logon Total"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Server Work Queues(*)">
+				<PerfmonCounter enabled="false" name="\Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Active Threads"/>
+				<PerfmonCounter enabled="false" name="\Available Threads"/>
+				<PerfmonCounter enabled="false" name="\Available Work Items"/>
+				<PerfmonCounter enabled="false" name="\Borrowed Work Items"/>
+				<PerfmonCounter enabled="false" name="\Work Item Shortages"/>
+				<PerfmonCounter enabled="false" name="\Current Clients"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Transferred/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\Context Blocks Queued/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Redirector">
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\File Data Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Bytes Paging/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Bytes Non-Paging/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Bytes Cache/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Bytes Network/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Transmitted/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Transmitted/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Bytes Paging/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Bytes Non-Paging/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Bytes Cache/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Bytes Network/sec"/>
+				<PerfmonCounter enabled="false" name="\File Read Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Operations Random/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Reads Large/sec"/>
+				<PerfmonCounter enabled="false" name="\Read Packets Small/sec"/>
+				<PerfmonCounter enabled="false" name="\File Write Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Operations Random/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Writes Large/sec"/>
+				<PerfmonCounter enabled="false" name="\Write Packets Small/sec"/>
+				<PerfmonCounter enabled="false" name="\Reads Denied/sec"/>
+				<PerfmonCounter enabled="false" name="\Writes Denied/sec"/>
+				<PerfmonCounter enabled="false" name="\Network Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Server Sessions"/>
+				<PerfmonCounter enabled="false" name="\Server Reconnects"/>
+				<PerfmonCounter enabled="false" name="\Connects Core"/>
+				<PerfmonCounter enabled="false" name="\Connects Lan Manager 2.0"/>
+				<PerfmonCounter enabled="false" name="\Connects Lan Manager 2.1"/>
+				<PerfmonCounter enabled="false" name="\Connects Windows NT"/>
+				<PerfmonCounter enabled="false" name="\Server Disconnects"/>
+				<PerfmonCounter enabled="false" name="\Server Sessions Hung"/>
+				<PerfmonCounter enabled="false" name="\Current Commands"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Browser">
+				<PerfmonCounter enabled="false" name="\Announcements Server/sec"/>
+				<PerfmonCounter enabled="false" name="\Announcements Domain/sec"/>
+				<PerfmonCounter enabled="false" name="\Announcements Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Election Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Mailslot Writes/sec"/>
+				<PerfmonCounter enabled="false" name="\Server List Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Enumerations Server/sec"/>
+				<PerfmonCounter enabled="false" name="\Enumerations Domain/sec"/>
+				<PerfmonCounter enabled="false" name="\Enumerations Other/sec"/>
+				<PerfmonCounter enabled="false" name="\Enumerations Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Missed Server Announcements"/>
+				<PerfmonCounter enabled="false" name="\Missed Mailslot Datagrams"/>
+				<PerfmonCounter enabled="false" name="\Missed Server List Requests"/>
+				<PerfmonCounter enabled="false" name="\Server Announce Allocations Failed/sec"/>
+				<PerfmonCounter enabled="false" name="\Mailslot Allocations Failed"/>
+				<PerfmonCounter enabled="false" name="\Mailslot Receives Failed"/>
+				<PerfmonCounter enabled="false" name="\Mailslot Writes Failed"/>
+				<PerfmonCounter enabled="false" name="\Mailslot Opens Failed/sec"/>
+				<PerfmonCounter enabled="false" name="\Duplicate Master Announcements"/>
+				<PerfmonCounter enabled="false" name="\Illegal Datagrams/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Cache">
+				<PerfmonCounter enabled="false" name="\Data Maps/sec"/>
+				<PerfmonCounter enabled="false" name="\Sync Data Maps/sec"/>
+				<PerfmonCounter enabled="false" name="\Async Data Maps/sec"/>
+				<PerfmonCounter enabled="false" name="\Data Map Hits %"/>
+				<PerfmonCounter enabled="false" name="\Data Map Hits %"/>
+				<PerfmonCounter enabled="false" name="\Data Map Pins/sec"/>
+				<PerfmonCounter enabled="false" name="\Data Map Pins/sec"/>
+				<PerfmonCounter enabled="false" name="\Pin Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Sync Pin Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Async Pin Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Pin Read Hits %"/>
+				<PerfmonCounter enabled="false" name="\Pin Read Hits %"/>
+				<PerfmonCounter enabled="false" name="\Copy Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Sync Copy Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Async Copy Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Copy Read Hits %"/>
+				<PerfmonCounter enabled="false" name="\Copy Read Hits %"/>
+				<PerfmonCounter enabled="false" name="\MDL Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Sync MDL Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Async MDL Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\MDL Read Hits %"/>
+				<PerfmonCounter enabled="false" name="\MDL Read Hits %"/>
+				<PerfmonCounter enabled="false" name="\Read Aheads/sec"/>
+				<PerfmonCounter enabled="false" name="\Fast Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Sync Fast Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Async Fast Reads/sec"/>
+				<PerfmonCounter enabled="false" name="\Fast Read Resource Misses/sec"/>
+				<PerfmonCounter enabled="false" name="\Fast Read Not Possibles/sec"/>
+				<PerfmonCounter enabled="false" name="\Lazy Write Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Lazy Write Pages/sec"/>
+				<PerfmonCounter enabled="false" name="\Data Flushes/sec"/>
+				<PerfmonCounter enabled="false" name="\Data Flush Pages/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Processor(0)">
+				<PerfmonCounter enabled="false" name="\% Processor Time"/>
+				<PerfmonCounter enabled="false" name="\% User Time"/>
+				<PerfmonCounter enabled="false" name="\% Privileged Time"/>
+				<PerfmonCounter enabled="false" name="\Interrupts/sec"/>
+				<PerfmonCounter enabled="false" name="\% DPC Time"/>
+				<PerfmonCounter enabled="false" name="\% Interrupt Time"/>
+				<PerfmonCounter enabled="false" name="\DPCs Queued/sec"/>
+				<PerfmonCounter enabled="false" name="\DPC Rate"/>
+				<PerfmonCounter enabled="false" name="\DPC Bypasses/sec"/>
+				<PerfmonCounter enabled="false" name="\APC Bypasses/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\Processor(*)">
+				<PerfmonCounter enabled="true" name="\% Processor Time"/>
+				<PerfmonCounter enabled="true" name="\% User Time"/>
+				<PerfmonCounter enabled="true" name="\% Privileged Time"/>
+				<PerfmonCounter enabled="true" name="\Interrupts/sec"/>
+				<PerfmonCounter enabled="true" name="\% DPC Time"/>
+				<PerfmonCounter enabled="true" name="\% Interrupt Time"/>
+				<PerfmonCounter enabled="true" name="\DPCs Queued/sec"/>
+				<PerfmonCounter enabled="true" name="\DPC Rate"/>
+				<PerfmonCounter enabled="true" name="\DPC Bypasses/sec"/>
+				<PerfmonCounter enabled="true" name="\APC Bypasses/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Processor(_Total)">
+				<PerfmonCounter enabled="false" name="\% Processor Time"/>
+				<PerfmonCounter enabled="false" name="\% User Time"/>
+				<PerfmonCounter enabled="false" name="\% Privileged Time"/>
+				<PerfmonCounter enabled="false" name="\Interrupts/sec"/>
+				<PerfmonCounter enabled="false" name="\% DPC Time"/>
+				<PerfmonCounter enabled="false" name="\% Interrupt Time"/>
+				<PerfmonCounter enabled="false" name="\DPCs Queued/sec"/>
+				<PerfmonCounter enabled="false" name="\DPC Rate"/>
+				<PerfmonCounter enabled="false" name="\DPC Bypasses/sec"/>
+				<PerfmonCounter enabled="false" name="\APC Bypasses/sec"/>
+			</PerfmonObject>
+			<PerfmonObject  name="\Memory">
+				<PerfmonCounter enabled="true" name="\Page Faults/sec"/>
+				<PerfmonCounter enabled="true" name="\Available Bytes"/>
+				<PerfmonCounter enabled="true" name="\Committed Bytes"/>
+				<PerfmonCounter enabled="true" name="\Commit Limit"/>
+				<PerfmonCounter enabled="true" name="\Write Copies/sec"/>
+				<PerfmonCounter enabled="true" name="\Transition Faults/sec"/>
+				<PerfmonCounter enabled="true" name="\Cache Faults/sec"/>
+				<PerfmonCounter enabled="true" name="\Demand Zero Faults/sec"/>
+				<PerfmonCounter enabled="true" name="\Pages/sec"/>
+				<PerfmonCounter enabled="true" name="\Pages Input/sec"/>
+				<PerfmonCounter enabled="true" name="\Page Reads/sec"/>
+				<PerfmonCounter enabled="true" name="\Pages Output/sec"/>
+				<PerfmonCounter enabled="true" name="\Pool Paged Bytes"/>
+				<PerfmonCounter enabled="true" name="\Pool Nonpaged Bytes"/>
+				<PerfmonCounter enabled="true" name="\Page Writes/sec"/>
+				<PerfmonCounter enabled="true" name="\Pool Paged Allocs"/>
+				<PerfmonCounter enabled="true" name="\Pool Nonpaged Allocs"/>
+				<PerfmonCounter enabled="true" name="\Free System Page Table Entries"/>
+				<PerfmonCounter enabled="true" name="\Cache Bytes"/>
+				<PerfmonCounter enabled="true" name="\Cache Bytes Peak"/>
+				<PerfmonCounter enabled="true" name="\Pool Paged Resident Bytes"/>
+				<PerfmonCounter enabled="true" name="\System Code Total Bytes"/>
+				<PerfmonCounter enabled="true" name="\System Code Resident Bytes"/>
+				<PerfmonCounter enabled="true" name="\System Driver Total Bytes"/>
+				<PerfmonCounter enabled="true" name="\System Driver Resident Bytes"/>
+				<PerfmonCounter enabled="true" name="\System Cache Resident Bytes"/>
+				<PerfmonCounter enabled="true" name="\% Committed Bytes In Use"/>
+				<PerfmonCounter enabled="false" name="\% Committed Bytes In Use"/>
+				<PerfmonCounter enabled="true" name="\Available KBytes"/>
+				<PerfmonCounter enabled="true" name="\Available MBytes"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\Objects">
+				<PerfmonCounter enabled="true" name="\Processes"/>
+				<PerfmonCounter enabled="true" name="\Threads"/>
+				<PerfmonCounter enabled="true" name="\Events"/>
+				<PerfmonCounter enabled="true" name="\Semaphores"/>
+				<PerfmonCounter enabled="true" name="\Mutexes"/>
+				<PerfmonCounter enabled="true" name="\Sections"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Paging File(*)">
+				<PerfmonCounter enabled="false" name="\% Usage"/>
+				<PerfmonCounter enabled="false" name="\% Usage"/>
+				<PerfmonCounter enabled="false" name="\% Usage Peak"/>
+				<PerfmonCounter enabled="false" name="\% Usage Peak"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Paging File(_Total)">
+				<PerfmonCounter enabled="false" name="\% Usage"/>
+				<PerfmonCounter enabled="false" name="\% Usage"/>
+				<PerfmonCounter enabled="false" name="\% Usage Peak"/>
+				<PerfmonCounter enabled="false" name="\% Usage Peak"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\System">
+				<PerfmonCounter enabled="false" name="\File Read Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\File Write Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\File Control Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\File Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\File Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\File Control Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\Context Switches/sec"/>
+				<PerfmonCounter enabled="false" name="\System Calls/sec"/>
+				<PerfmonCounter enabled="false" name="\File Data Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\System Up Time"/>
+				<PerfmonCounter enabled="false" name="\Processor Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Processes"/>
+				<PerfmonCounter enabled="false" name="\Threads"/>
+				<PerfmonCounter enabled="false" name="\Alignment Fixups/sec"/>
+				<PerfmonCounter enabled="false" name="\Exception Dispatches/sec"/>
+				<PerfmonCounter enabled="false" name="\Floating Emulations/sec"/>
+				<PerfmonCounter enabled="false" name="\% Registry Quota In Use"/>
+				<PerfmonCounter enabled="false" name="\% Registry Quota In Use"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\Process(*)">
+				<PerfmonCounter enabled="true" name="\% Processor Time"/>
+				<PerfmonCounter enabled="true" name="\% User Time"/>
+				<PerfmonCounter enabled="true" name="\% Privileged Time"/>
+				<PerfmonCounter enabled="true" name="\Virtual Bytes Peak"/>
+				<PerfmonCounter enabled="true" name="\Virtual Bytes"/>
+				<PerfmonCounter enabled="true" name="\Page Faults/sec"/>
+				<PerfmonCounter enabled="true" name="\Working Set Peak"/>
+				<PerfmonCounter enabled="true" name="\Working Set"/>
+				<PerfmonCounter enabled="true" name="\Page File Bytes Peak"/>
+				<PerfmonCounter enabled="true" name="\Page File Bytes"/>
+				<PerfmonCounter enabled="true" name="\Private Bytes"/>
+				<PerfmonCounter enabled="true" name="\Thread Count"/>
+				<PerfmonCounter enabled="true" name="\Priority Base"/>
+				<PerfmonCounter enabled="true" name="\Elapsed Time"/>
+				<PerfmonCounter enabled="true" name="\ID Process"/>
+				<PerfmonCounter enabled="true" name="\Creating Process ID"/>
+				<PerfmonCounter enabled="true" name="\Pool Paged Bytes"/>
+				<PerfmonCounter enabled="true" name="\Pool Nonpaged Bytes"/>
+				<PerfmonCounter enabled="true" name="\Handle Count"/>
+				<PerfmonCounter enabled="true" name="\IO Read Operations/sec"/>
+				<PerfmonCounter enabled="true" name="\IO Write Operations/sec"/>
+				<PerfmonCounter enabled="true" name="\IO Data Operations/sec"/>
+				<PerfmonCounter enabled="true" name="\IO Other Operations/sec"/>
+				<PerfmonCounter enabled="true" name="\IO Read Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\IO Write Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\IO Data Bytes/sec"/>
+				<PerfmonCounter enabled="true" name="\IO Other Bytes/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Process(_Total)">
+				<PerfmonCounter enabled="false" name="\% Processor Time"/>
+				<PerfmonCounter enabled="false" name="\% User Time"/>
+				<PerfmonCounter enabled="false" name="\% Privileged Time"/>
+				<PerfmonCounter enabled="false" name="\Virtual Bytes Peak"/>
+				<PerfmonCounter enabled="false" name="\Virtual Bytes"/>
+				<PerfmonCounter enabled="false" name="\Page Faults/sec"/>
+				<PerfmonCounter enabled="false" name="\Working Set Peak"/>
+				<PerfmonCounter enabled="false" name="\Working Set"/>
+				<PerfmonCounter enabled="false" name="\Page File Bytes Peak"/>
+				<PerfmonCounter enabled="false" name="\Page File Bytes"/>
+				<PerfmonCounter enabled="false" name="\Private Bytes"/>
+				<PerfmonCounter enabled="false" name="\Thread Count"/>
+				<PerfmonCounter enabled="false" name="\Priority Base"/>
+				<PerfmonCounter enabled="false" name="\Elapsed Time"/>
+				<PerfmonCounter enabled="false" name="\ID Process"/>
+				<PerfmonCounter enabled="false" name="\Creating Process ID"/>
+				<PerfmonCounter enabled="false" name="\Pool Paged Bytes"/>
+				<PerfmonCounter enabled="false" name="\Pool Nonpaged Bytes"/>
+				<PerfmonCounter enabled="false" name="\Handle Count"/>
+				<PerfmonCounter enabled="false" name="\IO Read Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Write Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Data Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Other Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Data Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Other Bytes/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Thread(*)">
+				<PerfmonCounter enabled="false" name="\% User Time" />
+				<PerfmonCounter enabled="false" name="\Thread Wait Reason" />
+				<PerfmonCounter enabled="false" name="\Elapsed Time" />
+				<PerfmonCounter enabled="false" name="\% Processor Time" />
+				<PerfmonCounter enabled="false" name="\Priority Current" />
+				<PerfmonCounter enabled="false" name="\ID Process" />
+				<PerfmonCounter enabled="false" name="\Thread State" />
+				<PerfmonCounter enabled="false" name="\% Privileged Time" />
+				<PerfmonCounter enabled="false" name="\Start Address" />
+				<PerfmonCounter enabled="false" name="\Priority Base" />
+				<PerfmonCounter enabled="false" name="\ID Thread" />
+				<PerfmonCounter enabled="false" name="\Context Switches/sec" />
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Job Object">
+				<PerfmonCounter enabled="false" name="\Current % Processor Time"/>
+				<PerfmonCounter enabled="false" name="\Current % User Mode Time"/>
+				<PerfmonCounter enabled="false" name="\Current % Kernel Mode Time"/>
+				<PerfmonCounter enabled="false" name="\This Period mSec - Processor"/>
+				<PerfmonCounter enabled="false" name="\This Period mSec - User Mode"/>
+				<PerfmonCounter enabled="false" name="\This Period mSec - Kernel Mode"/>
+				<PerfmonCounter enabled="false" name="\Total mSec - Processor"/>
+				<PerfmonCounter enabled="false" name="\Total mSec - User Mode"/>
+				<PerfmonCounter enabled="false" name="\Total mSec - Kernel Mode"/>
+				<PerfmonCounter enabled="false" name="\Pages/Sec"/>
+				<PerfmonCounter enabled="false" name="\Process Count - Total"/>
+				<PerfmonCounter enabled="false" name="\Process Count - Active"/>
+				<PerfmonCounter enabled="false" name="\Process Count - Terminated"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Job Object Details">
+				<PerfmonCounter enabled="false" name="\% Processor Time"/>
+				<PerfmonCounter enabled="false" name="\% User Time"/>
+				<PerfmonCounter enabled="false" name="\% Privileged Time"/>
+				<PerfmonCounter enabled="false" name="\Virtual Bytes Peak"/>
+				<PerfmonCounter enabled="false" name="\Virtual Bytes"/>
+				<PerfmonCounter enabled="false" name="\Page Faults/sec"/>
+				<PerfmonCounter enabled="false" name="\Working Set Peak"/>
+				<PerfmonCounter enabled="false" name="\Working Set"/>
+				<PerfmonCounter enabled="false" name="\Page File Bytes Peak"/>
+				<PerfmonCounter enabled="false" name="\Page File Bytes"/>
+				<PerfmonCounter enabled="false" name="\Private Bytes"/>
+				<PerfmonCounter enabled="false" name="\Thread Count"/>
+				<PerfmonCounter enabled="false" name="\Priority Base"/>
+				<PerfmonCounter enabled="false" name="\Elapsed Time"/>
+				<PerfmonCounter enabled="false" name="\ID Process"/>
+				<PerfmonCounter enabled="false" name="\Creating Process ID"/>
+				<PerfmonCounter enabled="false" name="\Pool Paged Bytes"/>
+				<PerfmonCounter enabled="false" name="\Pool Nonpaged Bytes"/>
+				<PerfmonCounter enabled="false" name="\Handle Count"/>
+				<PerfmonCounter enabled="false" name="\IO Read Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Write Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Data Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Other Operations/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Read Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Write Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Data Bytes/sec"/>
+				<PerfmonCounter enabled="false" name="\IO Other Bytes/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\RAS Port(*)">
+				<PerfmonCounter enabled="false" name="\Bytes Transmitted"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received"/>
+				<PerfmonCounter enabled="false" name="\Frames Transmitted"/>
+				<PerfmonCounter enabled="false" name="\Frames Received."/>
+				<PerfmonCounter enabled="false" name="\Percent Compression Out"/>
+				<PerfmonCounter enabled="false" name="\Percent Compression In"/>
+				<PerfmonCounter enabled="false" name="\CRC Errors"/>
+				<PerfmonCounter enabled="false" name="\Timeout Errors"/>
+				<PerfmonCounter enabled="false" name="\Serial Overrun Errors"/>
+				<PerfmonCounter enabled="false" name="\Alignment Errors"/>
+				<PerfmonCounter enabled="false" name="\Buffer Overrun Errors"/>
+				<PerfmonCounter enabled="false" name="\Total Errors"/>
+				<PerfmonCounter enabled="false" name="\Bytes Transmitted/Sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/Sec"/>
+				<PerfmonCounter enabled="false" name="\Frames Transmitted/Sec"/>
+				<PerfmonCounter enabled="false" name="\Frames Received/Sec"/>
+				<PerfmonCounter enabled="false" name="\Total Errors/Sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\RAS Total">
+				<PerfmonCounter enabled="false" name="\Bytes Transmitted"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received"/>
+				<PerfmonCounter enabled="false" name="\Frames Transmitted"/>
+				<PerfmonCounter enabled="false" name="\Frames Received."/>
+				<PerfmonCounter enabled="false" name="\Percent Compression Out"/>
+				<PerfmonCounter enabled="false" name="\Percent Compression In"/>
+				<PerfmonCounter enabled="false" name="\CRC Errors"/>
+				<PerfmonCounter enabled="false" name="\Timeout Errors"/>
+				<PerfmonCounter enabled="false" name="\Serial Overrun Errors"/>
+				<PerfmonCounter enabled="false" name="\Alignment Errors"/>
+				<PerfmonCounter enabled="false" name="\Buffer Overrun Errors"/>
+				<PerfmonCounter enabled="false" name="\Total Errors"/>
+				<PerfmonCounter enabled="false" name="\Bytes Transmitted/Sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/Sec"/>
+				<PerfmonCounter enabled="false" name="\Frames Transmitted/Sec"/>
+				<PerfmonCounter enabled="false" name="\Frames Received/Sec"/>
+				<PerfmonCounter enabled="false" name="\Total Errors/Sec"/>
+				<PerfmonCounter enabled="false" name="\Total Connections"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\ACS/RSVP Service(Service)">
+				<PerfmonCounter enabled="false" name="\Network Interfaces"/>
+				<PerfmonCounter enabled="false" name="\Network sockets"/>
+				<PerfmonCounter enabled="false" name="\Timers"/>
+				<PerfmonCounter enabled="false" name="\RSVP sessions"/>
+				<PerfmonCounter enabled="false" name="\QoS sockets"/>
+				<PerfmonCounter enabled="false" name="\QoS-enabled senders"/>
+				<PerfmonCounter enabled="false" name="\QoS-enabled receivers"/>
+				<PerfmonCounter enabled="false" name="\Failed QoS requests"/>
+				<PerfmonCounter enabled="false" name="\Failed QoS sends"/>
+				<PerfmonCounter enabled="false" name="\QoS notifications"/>
+				<PerfmonCounter enabled="false" name="\Bytes in QoS notifications"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SMTP Server(_Total)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent Total"/>
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received Total"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Sent Total"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Received Total"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Total"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Messages Received Total"/>
+				<PerfmonCounter enabled="false" name="\Messages Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Avg Recipients/msg Received"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Recipients/msg Received"/>
+				<PerfmonCounter enabled="false" name="\% Recipients Local"/>
+				<PerfmonCounter enabled="false" name="\Base % Recipients Local"/>
+				<PerfmonCounter enabled="false" name="\% Recipients Remote"/>
+				<PerfmonCounter enabled="false" name="\Base % Recipients Remote"/>
+				<PerfmonCounter enabled="false" name="\Messages Refused for Size"/>
+				<PerfmonCounter enabled="false" name="\Messages Refused for Address Objects"/>
+				<PerfmonCounter enabled="false" name="\Messages Refused for Mail Objects"/>
+				<PerfmonCounter enabled="false" name="\Messages Delivered Total"/>
+				<PerfmonCounter enabled="false" name="\Messages Delivered/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Delivery Retries"/>
+				<PerfmonCounter enabled="false" name="\Avg Retries/msg Delivered"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Retries/msg Delivered"/>
+				<PerfmonCounter enabled="false" name="\Pickup Directory Messages Retrieved Total"/>
+				<PerfmonCounter enabled="false" name="\Pickup Directory Messages Retrieved/sec"/>
+				<PerfmonCounter enabled="false" name="\NDRs Generated"/>
+				<PerfmonCounter enabled="false" name="\Local Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Local Retry Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Number of MailFiles Open"/>
+				<PerfmonCounter enabled="false" name="\Number of QueueFiles Open"/>
+				<PerfmonCounter enabled="false" name="\Categorizer Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Messages Sent Total"/>
+				<PerfmonCounter enabled="false" name="\Messages Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Send Retries"/>
+				<PerfmonCounter enabled="false" name="\Avg Retries/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Retries/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Avg Recipients/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Recipients/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Remote Queue Length"/>
+				<PerfmonCounter enabled="false" name="\DNS Queries Total"/>
+				<PerfmonCounter enabled="false" name="\DNS Queries/sec"/>
+				<PerfmonCounter enabled="false" name="\Remote Retry Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Inbound Connections Total"/>
+				<PerfmonCounter enabled="false" name="\Inbound Connections Current"/>
+				<PerfmonCounter enabled="false" name="\Outbound Connections Total"/>
+				<PerfmonCounter enabled="false" name="\Outbound Connections Current"/>
+				<PerfmonCounter enabled="false" name="\Outbound Connections Refused"/>
+				<PerfmonCounter enabled="false" name="\Total Connection Errors"/>
+				<PerfmonCounter enabled="false" name="\Connection Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Directory Drops Total"/>
+				<PerfmonCounter enabled="false" name="\Directory Drops/sec"/>
+				<PerfmonCounter enabled="false" name="\Routing Table Lookups Total"/>
+				<PerfmonCounter enabled="false" name="\Routing Table Lookups/sec"/>
+				<PerfmonCounter enabled="false" name="\ETRN Messages Total"/>
+				<PerfmonCounter enabled="false" name="\ETRN Messages/sec"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (No Recipients)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (Hop Count Exceeded)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (General Failure)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (Bad Pickup File)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (Triggered via Event)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (NDR of DSN)"/>
+				<PerfmonCounter enabled="false" name="\Messages Pending Routing"/>
+				<PerfmonCounter enabled="false" name="\Messages Currently Undeliverable"/>
+				<PerfmonCounter enabled="false" name="\Total messages submitted"/>
+				<PerfmonCounter enabled="false" name="\Total DSN Failures"/>
+				<PerfmonCounter enabled="false" name="\Current Messages in Local Delivery"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages submitted"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages submitted/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations completed"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations completed/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations in progress"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations completed successfully"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (non-retryable error)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (retryable error)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (Out Of Memory)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (DS logon failure)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (DS connection failure)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (sink retryable error)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages Categorized"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages bifurcated"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages aborted"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients before categorization"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients after categorization"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd by categorizer"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (unresolved)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (ambiguous address)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (illegal address)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (forwarding loop)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (sink recip errors)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients in categorization"/>
+				<PerfmonCounter enabled="false" name="\Cat: Senders unresolved"/>
+				<PerfmonCounter enabled="false" name="\Cat: Senders with ambiguous addresses"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookups"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookups/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookup completions"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookup completions/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookups not found"/>
+				<PerfmonCounter enabled="false" name="\Cat: mailmsg duplicate collisions"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP connections"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP connection failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP connections currently open"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP binds"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP bind failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged searches"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP search failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged search failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches completed"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches completed/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged searches completed"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP search completion failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged search completion failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP general completion failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches abandoned"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches pending completion"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\SMTP Server(*)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent Total"/>
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received Total"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Sent Total"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Received Total"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Total"/>
+				<PerfmonCounter enabled="false" name="\Message Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Messages Received Total"/>
+				<PerfmonCounter enabled="false" name="\Messages Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Avg Recipients/msg Received"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Recipients/msg Received"/>
+				<PerfmonCounter enabled="false" name="\% Recipients Local"/>
+				<PerfmonCounter enabled="false" name="\Base % Recipients Local"/>
+				<PerfmonCounter enabled="false" name="\% Recipients Remote"/>
+				<PerfmonCounter enabled="false" name="\Base % Recipients Remote"/>
+				<PerfmonCounter enabled="false" name="\Messages Refused for Size"/>
+				<PerfmonCounter enabled="false" name="\Messages Refused for Address Objects"/>
+				<PerfmonCounter enabled="false" name="\Messages Refused for Mail Objects"/>
+				<PerfmonCounter enabled="false" name="\Messages Delivered Total"/>
+				<PerfmonCounter enabled="false" name="\Messages Delivered/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Delivery Retries"/>
+				<PerfmonCounter enabled="false" name="\Avg Retries/msg Delivered"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Retries/msg Delivered"/>
+				<PerfmonCounter enabled="false" name="\Pickup Directory Messages Retrieved Total"/>
+				<PerfmonCounter enabled="false" name="\Pickup Directory Messages Retrieved/sec"/>
+				<PerfmonCounter enabled="false" name="\NDRs Generated"/>
+				<PerfmonCounter enabled="false" name="\Local Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Local Retry Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Number of MailFiles Open"/>
+				<PerfmonCounter enabled="false" name="\Number of QueueFiles Open"/>
+				<PerfmonCounter enabled="false" name="\Categorizer Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Messages Sent Total"/>
+				<PerfmonCounter enabled="false" name="\Messages Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Message Send Retries"/>
+				<PerfmonCounter enabled="false" name="\Avg Retries/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Retries/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Avg Recipients/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Base Avg Recipients/msg Sent"/>
+				<PerfmonCounter enabled="false" name="\Remote Queue Length"/>
+				<PerfmonCounter enabled="false" name="\DNS Queries Total"/>
+				<PerfmonCounter enabled="false" name="\DNS Queries/sec"/>
+				<PerfmonCounter enabled="false" name="\Remote Retry Queue Length"/>
+				<PerfmonCounter enabled="false" name="\Inbound Connections Total"/>
+				<PerfmonCounter enabled="false" name="\Inbound Connections Current"/>
+				<PerfmonCounter enabled="false" name="\Outbound Connections Total"/>
+				<PerfmonCounter enabled="false" name="\Outbound Connections Current"/>
+				<PerfmonCounter enabled="false" name="\Outbound Connections Refused"/>
+				<PerfmonCounter enabled="false" name="\Total Connection Errors"/>
+				<PerfmonCounter enabled="false" name="\Connection Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Directory Drops Total"/>
+				<PerfmonCounter enabled="false" name="\Directory Drops/sec"/>
+				<PerfmonCounter enabled="false" name="\Routing Table Lookups Total"/>
+				<PerfmonCounter enabled="false" name="\Routing Table Lookups/sec"/>
+				<PerfmonCounter enabled="false" name="\ETRN Messages Total"/>
+				<PerfmonCounter enabled="false" name="\ETRN Messages/sec"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (No Recipients)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (Hop Count Exceeded)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (General Failure)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (Bad Pickup File)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (Triggered via Event)"/>
+				<PerfmonCounter enabled="false" name="\Badmailed Messages (NDR of DSN)"/>
+				<PerfmonCounter enabled="false" name="\Messages Pending Routing"/>
+				<PerfmonCounter enabled="false" name="\Messages Currently Undeliverable"/>
+				<PerfmonCounter enabled="false" name="\Total messages submitted"/>
+				<PerfmonCounter enabled="false" name="\Total DSN Failures"/>
+				<PerfmonCounter enabled="false" name="\Current Messages in Local Delivery"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages submitted"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages submitted/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations completed"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations completed/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations in progress"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations completed successfully"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (non-retryable error)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (retryable error)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (Out Of Memory)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (DS logon failure)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (DS connection failure)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Categorizations failed (sink retryable error)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages Categorized"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages bifurcated"/>
+				<PerfmonCounter enabled="false" name="\Cat: Messages aborted"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients before categorization"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients after categorization"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd by categorizer"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (unresolved)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (ambiguous address)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (illegal address)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (forwarding loop)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients NDRd (sink recip errors)"/>
+				<PerfmonCounter enabled="false" name="\Cat: Recipients in categorization"/>
+				<PerfmonCounter enabled="false" name="\Cat: Senders unresolved"/>
+				<PerfmonCounter enabled="false" name="\Cat: Senders with ambiguous addresses"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookups"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookups/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookup completions"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookup completions/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: Address lookups not found"/>
+				<PerfmonCounter enabled="false" name="\Cat: mailmsg duplicate collisions"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP connections"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP connection failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP connections currently open"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP binds"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP bind failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged searches"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP search failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged search failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches completed"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches completed/sec"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged searches completed"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP search completion failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP paged search completion failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP general completion failures"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches abandoned"/>
+				<PerfmonCounter enabled="false" name="\Cat: LDAP searches pending completion"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Print Queue(_Total)">
+				<PerfmonCounter enabled="false" name="\Total Jobs Printed"/>
+				<PerfmonCounter enabled="false" name="\Bytes Printed/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Pages Printed"/>
+				<PerfmonCounter enabled="false" name="\Jobs"/>
+				<PerfmonCounter enabled="false" name="\References"/>
+				<PerfmonCounter enabled="false" name="\Max References"/>
+				<PerfmonCounter enabled="false" name="\Jobs Spooling"/>
+				<PerfmonCounter enabled="false" name="\Max Jobs Spooling"/>
+				<PerfmonCounter enabled="false" name="\Out of Paper Errors"/>
+				<PerfmonCounter enabled="false" name="\Not Ready Errors"/>
+				<PerfmonCounter enabled="false" name="\Job Errors"/>
+				<PerfmonCounter enabled="false" name="\Enumerate Network Printer Calls"/>
+				<PerfmonCounter enabled="false" name="\Add Network Printer Calls"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Telephony">
+				<PerfmonCounter enabled="false" name="\Lines"/>
+				<PerfmonCounter enabled="false" name="\Telephone Devices"/>
+				<PerfmonCounter enabled="false" name="\Active Lines"/>
+				<PerfmonCounter enabled="false" name="\Active Telephones"/>
+				<PerfmonCounter enabled="false" name="\Outgoing Calls/sec"/>
+				<PerfmonCounter enabled="false" name="\Incoming Calls/sec"/>
+				<PerfmonCounter enabled="false" name="\Client Apps"/>
+				<PerfmonCounter enabled="false" name="\Current Outgoing Calls"/>
+				<PerfmonCounter enabled="false" name="\Current Incoming Calls"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\NBT Connection(*)">
+				<PerfmonCounter enabled="true" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="true" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="true" name="\Bytes Total/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\NBT Connection(*)">
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Network Interface(*)">
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Current Bandwidth"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Non-Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Discarded"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Errors"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Unknown"/>
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent Non-Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Outbound Discarded"/>
+				<PerfmonCounter enabled="false" name="\Packets Outbound Errors"/>
+				<PerfmonCounter enabled="false" name="\Output Queue Length"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Network Interface(MS TCP Loopback interface)">
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Current Bandwidth"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Non-Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Discarded"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Errors"/>
+				<PerfmonCounter enabled="false" name="\Packets Received Unknown"/>
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Sent Non-Unicast/sec"/>
+				<PerfmonCounter enabled="false" name="\Packets Outbound Discarded"/>
+				<PerfmonCounter enabled="false" name="\Packets Outbound Errors"/>
+				<PerfmonCounter enabled="false" name="\Output Queue Length"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="true" name="\IP">
+				<PerfmonCounter enabled="true" name="\Datagrams/sec"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Received/sec"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Received Header Errors"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Received Address Errors"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Forwarded/sec"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Received Unknown Protocol"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Received Discarded"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Received Delivered/sec"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Sent/sec"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Outbound Discarded"/>
+				<PerfmonCounter enabled="true" name="\Datagrams Outbound No Route"/>
+				<PerfmonCounter enabled="true" name="\Fragments Received/sec"/>
+				<PerfmonCounter enabled="true" name="\Fragments Re-assembled/sec"/>
+				<PerfmonCounter enabled="true" name="\Fragment Re-assembly Failures"/>
+				<PerfmonCounter enabled="true" name="\Fragmented Datagrams/sec"/>
+				<PerfmonCounter enabled="true" name="\Fragmentation Failures"/>
+				<PerfmonCounter enabled="true" name="\Fragments Created/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\ICMP">
+				<PerfmonCounter enabled="false" name="\Messages/sec"/>
+				<PerfmonCounter enabled="false" name="\Messages Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Messages Received Errors"/>
+				<PerfmonCounter enabled="false" name="\Received Dest. Unreachable"/>
+				<PerfmonCounter enabled="false" name="\Received Time Exceeded"/>
+				<PerfmonCounter enabled="false" name="\Received Parameter Problem"/>
+				<PerfmonCounter enabled="false" name="\Received Source Quench"/>
+				<PerfmonCounter enabled="false" name="\Received Redirect/sec"/>
+				<PerfmonCounter enabled="false" name="\Received Echo/sec"/>
+				<PerfmonCounter enabled="false" name="\Received Echo Reply/sec"/>
+				<PerfmonCounter enabled="false" name="\Received Timestamp/sec"/>
+				<PerfmonCounter enabled="false" name="\Received Timestamp Reply/sec"/>
+				<PerfmonCounter enabled="false" name="\Received Address Mask"/>
+				<PerfmonCounter enabled="false" name="\Received Address Mask Reply"/>
+				<PerfmonCounter enabled="false" name="\Messages Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Messages Outbound Errors"/>
+				<PerfmonCounter enabled="false" name="\Sent Destination Unreachable"/>
+				<PerfmonCounter enabled="false" name="\Sent Time Exceeded"/>
+				<PerfmonCounter enabled="false" name="\Sent Parameter Problem"/>
+				<PerfmonCounter enabled="false" name="\Sent Source Quench"/>
+				<PerfmonCounter enabled="false" name="\Sent Redirect/sec"/>
+				<PerfmonCounter enabled="false" name="\Sent Echo/sec"/>
+				<PerfmonCounter enabled="false" name="\Sent Echo Reply/sec"/>
+				<PerfmonCounter enabled="false" name="\Sent Timestamp/sec"/>
+				<PerfmonCounter enabled="false" name="\Sent Timestamp Reply/sec"/>
+				<PerfmonCounter enabled="false" name="\Sent Address Mask"/>
+				<PerfmonCounter enabled="false" name="\Sent Address Mask Reply"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\TCP">
+				<PerfmonCounter enabled="false" name="\Segments/sec"/>
+				<PerfmonCounter enabled="false" name="\Connections Established"/>
+				<PerfmonCounter enabled="false" name="\Connections Active"/>
+				<PerfmonCounter enabled="false" name="\Connections Passive"/>
+				<PerfmonCounter enabled="false" name="\Connection Failures"/>
+				<PerfmonCounter enabled="false" name="\Connections Reset"/>
+				<PerfmonCounter enabled="false" name="\Segments Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Segments Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Segments Retransmitted/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\UDP">
+				<PerfmonCounter enabled="false" name="\Datagrams/sec"/>
+				<PerfmonCounter enabled="false" name="\Datagrams Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Datagrams No Port/sec"/>
+				<PerfmonCounter enabled="false" name="\Datagrams Received Errors"/>
+				<PerfmonCounter enabled="false" name="\Datagrams Sent/sec"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Web Service(_Total)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Sent"/>
+				<PerfmonCounter enabled="false" name="\Files Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Received"/>
+				<PerfmonCounter enabled="false" name="\Files Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Transferred"/>
+				<PerfmonCounter enabled="false" name="\Files/sec"/>
+				<PerfmonCounter enabled="false" name="\Current Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Anonymous Users/sec"/>
+				<PerfmonCounter enabled="false" name="\Total NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\NonAnonymous Users/sec"/>
+				<PerfmonCounter enabled="false" name="\Maximum Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum Connections"/>
+				<PerfmonCounter enabled="false" name="\Total Connection Attempts (all instances)"/>
+				<PerfmonCounter enabled="false" name="\Connection Attempts/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Logon Attempts"/>
+				<PerfmonCounter enabled="false" name="\Logon Attempts/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Options Requests"/>
+				<PerfmonCounter enabled="false" name="\Options Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Get Requests"/>
+				<PerfmonCounter enabled="false" name="\Get Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Post Requests"/>
+				<PerfmonCounter enabled="false" name="\Post Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Head Requests"/>
+				<PerfmonCounter enabled="false" name="\Head Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Put Requests"/>
+				<PerfmonCounter enabled="false" name="\Put Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Delete Requests"/>
+				<PerfmonCounter enabled="false" name="\Delete Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Trace Requests"/>
+				<PerfmonCounter enabled="false" name="\Trace Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Move Requests"/>
+				<PerfmonCounter enabled="false" name="\Move Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Copy Requests"/>
+				<PerfmonCounter enabled="false" name="\Copy Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Mkcol Requests"/>
+				<PerfmonCounter enabled="false" name="\Mkcol Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Propfind Requests"/>
+				<PerfmonCounter enabled="false" name="\Propfind Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Proppatch Requests"/>
+				<PerfmonCounter enabled="false" name="\Proppatch Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Search Requests"/>
+				<PerfmonCounter enabled="false" name="\Search Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Lock Requests"/>
+				<PerfmonCounter enabled="false" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Unlock Requests"/>
+				<PerfmonCounter enabled="false" name="\Unlock Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Other Request Methods"/>
+				<PerfmonCounter enabled="false" name="\Other Request Methods/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Method Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Method Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\CGI Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\ISAPI Extension Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Not Found Errors"/>
+				<PerfmonCounter enabled="false" name="\Not Found Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Locked Errors"/>
+				<PerfmonCounter enabled="false" name="\Locked Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Current CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\Current ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\Maximum CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\Maximum ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\Current CAL count for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Maximum CAL count for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Total count of failed CAL requests for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Current CAL count for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum CAL count for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Total count of failed CAL requests for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Total Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Allowed Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Rejected Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Current Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Measured Async I/O Bandwidth Usage"/>
+				<PerfmonCounter enabled="false" name="\Service Uptime"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Web Service(Default Web Site)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Sent"/>
+				<PerfmonCounter enabled="false" name="\Files Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Received"/>
+				<PerfmonCounter enabled="false" name="\Files Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Transferred"/>
+				<PerfmonCounter enabled="false" name="\Files/sec"/>
+				<PerfmonCounter enabled="false" name="\Current Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Anonymous Users/sec"/>
+				<PerfmonCounter enabled="false" name="\Total NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\NonAnonymous Users/sec"/>
+				<PerfmonCounter enabled="false" name="\Maximum Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum Connections"/>
+				<PerfmonCounter enabled="false" name="\Total Connection Attempts (all instances)"/>
+				<PerfmonCounter enabled="false" name="\Connection Attempts/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Logon Attempts"/>
+				<PerfmonCounter enabled="false" name="\Logon Attempts/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Options Requests"/>
+				<PerfmonCounter enabled="false" name="\Options Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Get Requests"/>
+				<PerfmonCounter enabled="false" name="\Get Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Post Requests"/>
+				<PerfmonCounter enabled="false" name="\Post Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Head Requests"/>
+				<PerfmonCounter enabled="false" name="\Head Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Put Requests"/>
+				<PerfmonCounter enabled="false" name="\Put Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Delete Requests"/>
+				<PerfmonCounter enabled="false" name="\Delete Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Trace Requests"/>
+				<PerfmonCounter enabled="false" name="\Trace Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Move Requests"/>
+				<PerfmonCounter enabled="false" name="\Move Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Copy Requests"/>
+				<PerfmonCounter enabled="false" name="\Copy Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Mkcol Requests"/>
+				<PerfmonCounter enabled="false" name="\Mkcol Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Propfind Requests"/>
+				<PerfmonCounter enabled="false" name="\Propfind Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Proppatch Requests"/>
+				<PerfmonCounter enabled="false" name="\Proppatch Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Search Requests"/>
+				<PerfmonCounter enabled="false" name="\Search Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Lock Requests"/>
+				<PerfmonCounter enabled="false" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Unlock Requests"/>
+				<PerfmonCounter enabled="false" name="\Unlock Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Other Request Methods"/>
+				<PerfmonCounter enabled="false" name="\Other Request Methods/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Method Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Method Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\CGI Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\ISAPI Extension Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Not Found Errors"/>
+				<PerfmonCounter enabled="false" name="\Not Found Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Locked Errors"/>
+				<PerfmonCounter enabled="false" name="\Locked Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Current CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\Current ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\Maximum CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\Maximum ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\Current CAL count for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Maximum CAL count for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Total count of failed CAL requests for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Current CAL count for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum CAL count for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Total count of failed CAL requests for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Total Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Allowed Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Rejected Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Current Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Measured Async I/O Bandwidth Usage"/>
+				<PerfmonCounter enabled="false" name="\Service Uptime"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\Web Service(Administration Web Site)">
+				<PerfmonCounter enabled="false" name="\Bytes Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Bytes Total/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Sent"/>
+				<PerfmonCounter enabled="false" name="\Files Sent/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Received"/>
+				<PerfmonCounter enabled="false" name="\Files Received/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Files Transferred"/>
+				<PerfmonCounter enabled="false" name="\Files/sec"/>
+				<PerfmonCounter enabled="false" name="\Current Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Total Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Anonymous Users/sec"/>
+				<PerfmonCounter enabled="false" name="\Total NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\NonAnonymous Users/sec"/>
+				<PerfmonCounter enabled="false" name="\Maximum Anonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Maximum NonAnonymous Users"/>
+				<PerfmonCounter enabled="false" name="\Current Connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum Connections"/>
+				<PerfmonCounter enabled="false" name="\Total Connection Attempts (all instances)"/>
+				<PerfmonCounter enabled="false" name="\Connection Attempts/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Logon Attempts"/>
+				<PerfmonCounter enabled="false" name="\Logon Attempts/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Options Requests"/>
+				<PerfmonCounter enabled="false" name="\Options Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Get Requests"/>
+				<PerfmonCounter enabled="false" name="\Get Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Post Requests"/>
+				<PerfmonCounter enabled="false" name="\Post Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Head Requests"/>
+				<PerfmonCounter enabled="false" name="\Head Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Put Requests"/>
+				<PerfmonCounter enabled="false" name="\Put Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Delete Requests"/>
+				<PerfmonCounter enabled="false" name="\Delete Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Trace Requests"/>
+				<PerfmonCounter enabled="false" name="\Trace Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Move Requests"/>
+				<PerfmonCounter enabled="false" name="\Move Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Copy Requests"/>
+				<PerfmonCounter enabled="false" name="\Copy Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Mkcol Requests"/>
+				<PerfmonCounter enabled="false" name="\Mkcol Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Propfind Requests"/>
+				<PerfmonCounter enabled="false" name="\Propfind Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Proppatch Requests"/>
+				<PerfmonCounter enabled="false" name="\Proppatch Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Search Requests"/>
+				<PerfmonCounter enabled="false" name="\Search Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Lock Requests"/>
+				<PerfmonCounter enabled="false" name="\Lock Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Unlock Requests"/>
+				<PerfmonCounter enabled="false" name="\Unlock Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Other Request Methods"/>
+				<PerfmonCounter enabled="false" name="\Other Request Methods/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Method Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Method Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\CGI Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\ISAPI Extension Requests/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Not Found Errors"/>
+				<PerfmonCounter enabled="false" name="\Not Found Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Locked Errors"/>
+				<PerfmonCounter enabled="false" name="\Locked Errors/sec"/>
+				<PerfmonCounter enabled="false" name="\Current CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\Current ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\Maximum CGI Requests"/>
+				<PerfmonCounter enabled="false" name="\Maximum ISAPI Extension Requests"/>
+				<PerfmonCounter enabled="false" name="\Current CAL count for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Maximum CAL count for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Total count of failed CAL requests for authenticated users"/>
+				<PerfmonCounter enabled="false" name="\Current CAL count for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Maximum CAL count for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Total count of failed CAL requests for SSL connections"/>
+				<PerfmonCounter enabled="false" name="\Total Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Allowed Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Total Rejected Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Current Blocked Async I/O Requests"/>
+				<PerfmonCounter enabled="false" name="\Measured Async I/O Bandwidth Usage"/>
+				<PerfmonCounter enabled="false" name="\Service Uptime"/>
+			</PerfmonObject>
+			<PerfmonObject enabled="false" name="\WINS Server">
+				<PerfmonCounter enabled="false" name="\Unique Registrations/sec"/>
+				<PerfmonCounter enabled="false" name="\Group Registrations/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Number of Registrations/sec"/>
+				<PerfmonCounter enabled="false" name="\Unique Renewals/sec"/>
+				<PerfmonCounter enabled="false" name="\Group Renewals/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Number of Renewals/sec"/>
+				<PerfmonCounter enabled="false" name="\Releases/sec"/>
+				<PerfmonCounter enabled="false" name="\Queries/sec"/>
+				<PerfmonCounter enabled="false" name="\Unique Conflicts/sec"/>
+				<PerfmonCounter enabled="false" name="\Group Conflicts/sec"/>
+				<PerfmonCounter enabled="false" name="\Total Number of Conflicts/sec"/>
+				<PerfmonCounter enabled="false" name="\Successful Releases/sec"/>
+				<PerfmonCounter enabled="false" name="\Failed Releases/sec"/>
+				<PerfmonCounter enabled="false" name="\Successful Queries/sec"/>
+				<PerfmonCounter enabled="false" name="\Failed Queries/sec"/>
+			</PerfmonObject>
+        </PerfmonCounters>
+    </PerfmonCollector>
+</dsPerfmon>

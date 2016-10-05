@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<Versions>
+	<Version version="3.1.0" message="You must upgrade to version 3.0.9" mandatory="true" silent="true" refreshpathmask="refresh\*.*">
+		<RemoveFile filemask="versions.txt"/>
+	</Version>
+</Versions>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xs:schema id="dsPerfmon" targetNamespace="http://tempuri.org/pssdiag_perfmon_schema.xsd" xmlns:mstns="http://tempuri.org/pssdiag_perfmon_schema.xsd" xmlns="http://tempuri.org/pssdiag_perfmon_schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsPerfmon" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="PerfmonCollector">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PerfmonCounters" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PerfmonObject" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PerfmonCounter" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="enabled" form="unqualified" type="xs:boolean" />
+                              <xs:attribute name="name" form="unqualified" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="enabled" form="unqualified" type="xs:boolean" />
+                        <xs:attribute name="name" form="unqualified" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

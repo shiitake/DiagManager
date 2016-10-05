@@ -1,0 +1,50 @@
+Deletes all but the 12 most recent Profiler trace files (same for perfmon .BLG 
+files). To use this in PSSDIAG, include the following custom utility definition 
+in PSSDIAG.INI: 
+
+    StartupUtility=1
+    StartupUtilityTemplate=
+    StartupUtilityName=DeleteOldTrcFiles.cmd "%output_path%" 12 > DeleteOldTrcFiles.OUT
+
+Be sure to include all of the following files in the PSSDIAG package: 
+    DeleteOldTrcFiles.cmd
+    DeleteOldFiles.cmd
+    sleep.exe
+
+Test the job first -- the DeleteOldTrcFiles job should start in a new console 
+window and check for old .trc files to delete every 30 seconds. 
+
+
+*********
+WARNING
+*********
+The number of trace files corresponds to a fixed amount of disk space used, but 
+not to a fixed amount of time captured.  With some workloads a 350MB .TRC file 
+may capture 30 minutes of activity or more, but with other workloads it may only 
+capture a single minute of activity, or less.  Capturing a detailed trace or 
+adding events to the trace will also reduce the time window that a single trace 
+file will capture.  Be sure that your customer will be able to stop PSSDIAG soon 
+enough after the problem occurrance to avoid losing trace data you need to 
+troubleshoot the issue.  To ensure that you will get the necessary data, you may 
+wish to have the customer report back to you after checking to see how frequently 
+the trace is rolling over.  If you need to retain more than the default number of 
+trace files (12), edit the DeleteOldTrcFiles.CMD file. 
+
+In addition to this utility, here are three other approaches that may allow you 
+to retain more trace files without running out of disk space. 
+ 1. Add more local disk space. 
+ 2. Reduce the set of Profiler events being captured. 
+ 3. Use the /C2 flag to enable background NTFS compression of output files. 
+
+The following are *NOT* recommended as methods to deal with space constraints on 
+the server: 
+ - Do not attempt to trace to a network drive or UNC path. 
+ - Do not attempt to run PSSDIAG remotely in an attempt to minimize space usage 
+   on the server (Profiler traces are always captured locally on the server, even 
+   if PSSDIAG is running remotely). 
+ - Do not use the client GUI PROFILER.EXE from a remote machine (or even from the 
+   local machine). 
+These may occasionally be reasonable alternatives in a dev or test environment 
+where performance is not critical, but on a heavily loaded production server these 
+methods of tracing should be avoided; tracing should always be done to a local 
+drive and through the sp_trace* interfaces (or PSSDIAG), not Profiler.EXE. 

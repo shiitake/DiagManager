@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:pssd="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="CollectionPointType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="startup"/>
+			<xs:enumeration value="shutdown"/>
+			<xs:enumeration value="polled"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="WaitType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="no"/>
+			<xs:enumeration value="yes"/>
+			<xs:enumeration value="onlyonshutdown"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PollingIntervalType">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="3599"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MaxFileSizeType">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="1024"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CollectorType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="customtsqlcommand"/>
+			<xs:enumeration value="customutility"/>
+			<xs:enumeration value="customdiagnostic"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CustomDiagnosticType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="tsql_command"/>
+			<xs:enumeration value="tsql_script"/>
+			<xs:enumeration value="utility"/>
+			<xs:enumeration value="vb_script"/>
+			<xs:enumeration value="copy_file"/>
+			<xs:enumeration value="tail_file"/>
+			<xs:enumeration value="type_file"/>
+			<xs:enumeration value="reg_query"/>
+			<xs:enumeration value="reg_save"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MachineCollectorType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="custom"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="InstanceCollectorType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="customtsqlcommand"/>
+			<xs:enumeration value="customutility"/>
+			<xs:enumeration value="customdiagnostic"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SSVerType">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="7"/>
+			<xs:maxInclusive value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AuthType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Windows"/>
+			<xs:enumeration value="SQLServer"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ParameterNameType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[@].+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SetupVerType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CaseNumberType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="SR.[0-9]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="Collection">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Machines" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Machine" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="MachineCollectors" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="EventlogCollector" minOccurs="1" maxOccurs="1">
+														<xs:complexType>
+															<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+															<xs:attribute name="startup" type="xs:boolean" default="false" form="unqualified"/>
+															<xs:attribute name="shutdown" type="xs:boolean" default="false" form="unqualified"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="PerfmonCollector" minOccurs="1" maxOccurs="1">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PerfmonCounters" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PerfmonObject" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PerfmonCounter" maxOccurs="unbounded">
+																							<xs:complexType>
+																								<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																								<xs:attribute name="name" type="xs:string" default="" form="unqualified"/>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																					<xs:attribute name="enabled" type="xs:boolean" form="unqualified"/>
+																					<xs:attribute name="name" type="xs:string" default="" form="unqualified"/>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+															<xs:attribute name="pollinginterval" type="PollingIntervalType" default="5" form="unqualified"/>
+															<xs:attribute name="maxfilesize" type="MaxFileSizeType" default="256" form="unqualified"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="MachineCollector" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="type" type="MachineCollectorType" use="required" form="unqualified"/>
+															<xs:attribute name="point" type="CollectionPointType" use="required" form="unqualified"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Instances" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Instance" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Collectors" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="SqldiagCollector" minOccurs="1" maxOccurs="1">
+																				<xs:complexType>
+																					<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																					<xs:attribute name="startup" type="xs:boolean" default="false" form="unqualified"/>
+																					<xs:attribute name="shutdown" type="xs:boolean" default="false" form="unqualified"/>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="BlockingCollector" minOccurs="1" maxOccurs="1">
+																				<xs:complexType>
+																					<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																					<xs:attribute name="latch" type="xs:boolean" default="false" form="unqualified"/>
+																					<xs:attribute name="fast" type="xs:boolean" default="true" form="unqualified"/>
+																					<xs:attribute name="pollinginterval" type="PollingIntervalType" default="5" form="unqualified"/>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="ProfilerCollector" minOccurs="1" maxOccurs="1">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Events" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="EventType" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="Event" maxOccurs="unbounded">
+																													<xs:complexType>
+																														<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																														<xs:attribute name="name" type="xs:string" default="" form="unqualified"/>
+																														<xs:attribute name="description" type="xs:string" default="" form="unqualified"/>
+																														<xs:attribute name="id" type="xs:int" default="0" form="unqualified"/>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																											<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																											<xs:attribute name="name" type="xs:string" default="" form="unqualified"/>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																					<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																					<xs:attribute name="template" type="xs:string" default="_GeneralPerformance80.TTD" form="unqualified"/>
+																					<xs:attribute name="pollinginterval" type="PollingIntervalType" default="5" form="unqualified"/>
+																					<xs:attribute name="maxfilesize" type="MaxFileSizeType" default="350" form="unqualified"/>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="Collector" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																					<xs:attribute name="type" type="InstanceCollectorType" default="customutility" form="unqualified"/>
+																					<xs:attribute name="point" type="CollectionPointType" default="startup" form="unqualified"/>
+																					<xs:attribute name="cmd" type="xs:string" default="" form="unqualified"/>
+																					<xs:attribute name="groupname" type="xs:string" default="" form="unqualified"/>
+																					<xs:attribute name="taskname" type="xs:string" default="" form="unqualified"/>
+																					<xs:attribute name="customdiagtype" type="CustomDiagnosticType" default="utility" form="unqualified"/>
+																					<xs:attribute name="wait" type="WaitType" default="no" form="unqualified"/>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="CustomDiagGroup" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:attribute name="enabled" type="xs:boolean" default="false" form="unqualified"/>
+																					<xs:attribute name="name" type="xs:string" default="" form="unqualified"/>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="name" type="xs:string" default="*" form="unqualified"/>
+															<xs:attribute name="windowsauth" type="xs:boolean" default="true" form="unqualified"/>
+															<xs:attribute name="ssver" type="SSVerType" default="8" form="unqualified"/>
+															<xs:attribute name="user" type="xs:string" default="" form="unqualified"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+											<xs:unique name="UniqueInstanceName">
+												<xs:selector xpath=".//Instance"/>
+												<xs:field xpath="@name"/>
+											</xs:unique>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="name" type="xs:string" default="" form="unqualified"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:unique name="UniqueMachineName">
+						<xs:selector xpath=".//Machine"/>
+						<xs:field xpath="@name"/>
+					</xs:unique>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="setupver" type="SetupVerType" form="unqualified"/>
+			<xs:attribute name="casenumber" type="CaseNumberType" form="unqualified" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

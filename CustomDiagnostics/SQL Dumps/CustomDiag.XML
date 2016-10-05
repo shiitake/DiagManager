@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="SQL Dumps" taskname="exception.log" type="Utility" point="Shutdown" wait="OnlyOnShutdown" cmd="copy /Y &quot;%sspath%LOG\exception.LOG&quot; &quot;%output_name%&quot; &gt; NUL 2&gt;&amp;1" />
+  <CustomTask enabled="true" groupname="SQL Dumps" taskname="SQLMinidumps" type="Utility" point="Shutdown" wait="OnlyOnShutdown" cmd="get_minidumps.cmd 10000000 70000000 &quot;%sspath%&quot; &quot;%instance%&quot; &quot;%output_path%&quot;" />
+</CustomTasks>

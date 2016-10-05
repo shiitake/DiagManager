@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="SQL Base" taskname="PSSDFileDetails" type="Utility" point="Startup" wait="Yes" cmd="GetFileVer.CMD pssdiag.exe" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="DefineRealProcArch" type="Utility" point="Startup" wait="Yes" cmd=";%REAL_PROCESSOR_ARCHITECTURE%=!!DefineCommonVars.CMD REAL_PROCESSOR_ARCHITECTURE!!" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="OutputRealProcArch" type="Utility" point="Startup" wait="No" cmd="echo REAL_PROCESSOR_ARCHITECTURE=%REAL_PROCESSOR_ARCHITECTURE%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="DefineSQL80COMPath" type="Utility" point="Startup" wait="Yes" cmd=";%SQL80COMPATH%=!!DefineCommonVars.CMD SQL80COMPATH!!" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="OutputSQL80COMPATH" type="Utility" point="Startup" wait="No" cmd="echo SQL80COMPATH=%SQL80COMPATH%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="DefineSQL80ToolsPath" type="Utility" point="Startup" wait="Yes" cmd=";%SQL80TOOLSPATH%=!!DefineCommonVars.CMD SQL80TOOLSPATH!!" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="OutputSQL80ToolsPath" type="Utility" point="Startup" wait="No" cmd="echo SQL80TOOLSPATH=%SQL80TOOLSPATH%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="DefineAllProgramFiles" type="Utility" point="Startup" wait="Yes" cmd=";%ALL_PROGRAMFILES%=!!DefineCommonVars.CMD ALL_PROGRAMFILES!!" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="OutputAllProgramFiles" type="Utility" point="Startup" wait="No" cmd="echo ALL_PROGRAMFILES=%ALL_PROGRAMFILES%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="DefineAllCommonFiles" type="Utility" point="Startup" wait="Yes" cmd=";%ALL_COMMONPROGRAMFILES%=!!DefineCommonVars.CMD ALL_COMMONPROGRAMFILES!!" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="OutputAllCommonFiles" type="Utility" point="Startup" wait="No" cmd="echo ALL_COMMONPROGRAMFILES=%ALL_COMMONPROGRAMFILES%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="DefineSQLInstanceSetupPaths" type="Utility" point="Startup" wait="Yes" cmd=";%SQLINSTANCESETUPPATH%=!!DefineSQLInstanceSetupPaths.CMD!!" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="OutputSQLInstanceSetupPaths" type="Utility" point="Startup" wait="No" cmd="echo SQLINSTANCESETUPPATH=%SQLINSTANCESETUPPATH%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="ClearOrphanedBLGs" type="Utility" point="Startup" wait="No" cmd="ClearOrphanedBLGs.cmd %appname% &quot;%output_path%&quot; &gt; &quot;%internal_output_name%.OUT&quot; 2&gt;&amp;1" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="TraceFlagHelperProcs" type="TSQL_Script" point="Startup" wait="Yes" cmd="TraceFlagHelperProcs.tem" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="MSSQLServer Reg" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\Software\Microsoft\MSSQLServer" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="MicrosoftSQLServer Reg" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\Software\Microsoft\Microsoft SQL Server" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="MSSQLInst Reg" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\Software\Microsoft\MSSQL$%instance%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="MSSQLServer Service Reg" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\System\CurrentControlSet\Services\MSSQLServer" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="MSSQL Inst Service Reg" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\System\CurrentControlSet\Services\MSSQL$%instance%" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="OLAP80 Reg" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\SOFTWARE\Microsoft\OLAP Server" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="GetAllSvcsReg" type="Reg_Save" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\System\CurrentControlSet\Services" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="Enable -T2543" type="TSQL_Command" point="Startup" wait="No" cmd="EXEC tempdb.dbo.sp_diag_trace_flag_enable 2543, '%appname%'" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="SQLInstanceFileVersions" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="getfilever.cmd &quot;%sspath%&quot; &gt; &quot;%output_name%.TXT&quot; 2&gt;&amp;1" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="SQLSharedToolsFileVersions" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="getfilever.cmd &quot;%SQL80TOOLSPATH%&quot; &gt; &quot;%output_name%.TXT&quot; 2&gt;&amp;1" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="SQLSharedCOMFileVersions" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="getfilever.cmd &quot;%SQL80COMPATH%&quot; &gt; &quot;%output_name%.TXT&quot; 2&gt;&amp;1" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="TimeZoneInformation" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="OutputActiveTimeBias.CMD %server% &gt; &quot;%output_name%.TXT&quot; 2&gt;&amp;1" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="PAE_NTMemMgr_RegKey" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="NTOSKRNLVersion" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="GetFileVer.CMD %windir%\system32\ntoskrnl.exe getfilever.cmd &quot;%SQL80TOOLSPATH%&quot; &gt; &quot;%output_name%.TXT&quot; 2&gt;&amp;1" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="RestoreTraceFlagOrigValues" type="TSQL_Command" point="Shutdown" wait="No" cmd="EXEC tempdb.dbo.sp_diag_trace_flag_restore '%appname%'" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="Task List" type="Utility" point="Startup" wait="OnlyOnShutdown" cmd="get_tasklist.cmd &gt; %output_name%.TXT 2&gt;&amp;1" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="Errorlog" type="Utility" point="Shutdown" wait="OnlyOnShutdown" cmd="collecterrorlog.cmd  %server_instance% &gt; &quot;%output_name%.TXT&quot; 2&gt;&amp;1" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="Copy ##pssdiag.xml for 2000" type="Utility" point="Startup" wait="No" cmd="IF EXIST &quot;%startup_path%##pssdiag.xml&quot; copy /Y &quot;%startup_path%##pssdiag.xml&quot; &quot;%output_path%&quot; &quot;%output_path%&quot; /Y /Q" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="tempdb trace flag 1118" type="TSQL_Script" point="Startup" wait="OnlyOnShutdown" cmd="tempdbtraceflag1118.sql" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="MiscPssdiagInfo" type="TSQL_Script" point="Startup" wait="OnlyOnShutdown" cmd="MiscPssdiagInfo.sql" pollinginterval="0" />
+  <CustomTask enabled="true" groupname="SQL Base" taskname="WindowsCurrentVersion" type="Reg_Query" point="Startup" wait="OnlyOnShutdown" cmd="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" pollinginterval="0" />
+</CustomTasks>

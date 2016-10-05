@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+  <CustomTask enabled="true" groupname="SQL 2008 Backup MDW" taskname="Backup MDW" type="TSQL_Command" point="Shutdown" wait="OnlyOnShutdown" cmd="IF UPPER('%backdb%')&lt;&gt;'NONE' BACKUP DATABASE %backdb% TO DISK = '%output_path%%server%_%instance%_%backdb%.BCK' WITH INIT, STATS=1">
+    <Param name="%backdb%" prompt="Please supply the name of customer's MDW to backup" datatype="string" default="None" />
+  </CustomTask>
+</CustomTasks>

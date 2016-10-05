@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xs:schema id="dsProfiler" targetNamespace="http://tempuri.org/pssdiag_trace_schema.xsd" xmlns:mstns="http://tempuri.org/pssdiag_trace_schema.xsd" xmlns="http://tempuri.org/pssdiag_trace_schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsProfiler" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="ProfilerCollector">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Events" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EventType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Event" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="id" form="unqualified" type="xs:int" />
+                              <xs:attribute name="name" form="unqualified" type="xs:string" />
+                              <xs:attribute name="enabled" form="unqualified" type="xs:boolean" />
+                              <xs:attribute name="description" form="unqualified" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" form="unqualified" type="xs:string" />
+                        <xs:attribute name="enabled" form="unqualified" type="xs:boolean" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+			<xs:attribute name="template" type="xs:string" form="unqualified"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

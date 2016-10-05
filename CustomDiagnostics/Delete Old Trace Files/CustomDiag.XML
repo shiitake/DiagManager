@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+	<CustomTask enabled="true" groupname="Delete Old Trace Files" taskname="DeleteOldTrcFiles" type="Utility" point="Startup" wait="No" cmd="DeleteOldTrcFiles.cmd %NumTrcFiles% &quot;%output_path%&quot;  &gt; &quot;%internal_output_name%.TXT&quot; 2&gt;&amp;1" >
+		<Param name="%NumTrcFiles%" prompt="Enter the number of .TRC/.BLG files to keep:" datatype="string" default="12" /> 
+	</CustomTask>
+</CustomTasks>

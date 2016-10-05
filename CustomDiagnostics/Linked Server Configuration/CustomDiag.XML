@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+	<CustomTask enabled="true" groupname="Linked Server Configuration" taskname="Linked Server Config" type="TSQL_Script" point="Startup" wait="OnlyOnShutdown" cmd="linked_server_config.sql" />
+	<CustomTask enabled="true" groupname="Linked Server Configuration" taskname="SQL Module List" type="Utility" point="Shutdown" wait="Yes" cmd="sql_module_list.cmd &gt; &quot;%output_name%.TXT&quot; 2&gt; &quot;%internal_output_name%.TXT&quot;" />
+</CustomTasks>

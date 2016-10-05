@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomTasks>
+	<CustomTask enabled="true" groupname="SQLAgent" taskname="Agent Log" type="Utility" point="Shutdown" wait="OnlyOnShutdown" cmd="multicopy.cmd &quot;%sspath%LOG\SQLAGENT.*&quot; &quot;%output_path%%server%_%instance%_&quot;" />
+	<CustomTask enabled="true" groupname="SQLAgent" taskname="Backup msdb" type="TSQL_Command" point="Shutdown" wait="OnlyOnShutdown" cmd="BACKUP DATABASE msdb TO DISK = '%output_name%.BCK' WITH INIT, STATS=1" />
+</CustomTasks>
